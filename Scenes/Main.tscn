@@ -7,13 +7,13 @@
 [ext_resource type="Script" path="res://Scenes/Button1_Sound.gd" id="3_p5htt"]
 [ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="4_bblme"]
 [ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
-[ext_resource type="Script" path="res://Scripts/ClickableSprite.cs" id="8_e1m04"]
-[ext_resource type="Script" path="res://Scripts/Emitter2D.cs" id="9_8x7fv"]
+[ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
+[ext_resource type="Texture2D" uid="uid://c7tajfa2b12ob" path="res://Assets/Images/Spotlight.png" id="8_7it6c"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lm7px"]
-radius = 68.0
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b6q8"]
+blend_mode = 1
 
 [node name="Main" type="Node2D"]
 
@@ -44,30 +44,86 @@ bank_0 = ExtResource("2_dxf4c")
 bank_1 = ExtResource("3_bytus")
 
 [node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="."]
-play_event = 1
 stop_event = 3
 event = ExtResource("4_bblme")
 
 [node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.25, 0.5, 0.5, 1)
 position = Vector2(960, 540)
 texture = ExtResource("7_3ifmd")
 
-[node name="Clickable" type="Area2D" parent="."]
-position = Vector2(633, 267)
-script = ExtResource("8_e1m04")
+[node name="Spotlight" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("CanvasItemMaterial_3b6q8")
+position = Vector2(480, 758)
+scale = Vector2(1.64, 1)
+texture = ExtResource("8_7it6c")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable"]
-shape = SubResource("CircleShape2D_lm7px")
+[node name="Bird_1" parent="." instance=ExtResource("8_0iyqr")]
 
-[node name="Sprite2D" type="Sprite2D" parent="Clickable"]
-texture = ExtResource("2_ivar4")
+[node name="Bird_2" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(832, 284)
+TrackName = "bird_2"
 
-[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="Clickable"]
-event = ExtResource("2_5h313")
-script = ExtResource("9_8x7fv")
+[node name="Bird_3" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1042, 284)
+TrackName = "bird_3"
+
+[node name="Bird_bass" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1228, 276)
+TrackName = "bird_bass"
+
+[node name="Bug_synth" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1228, 546)
+TrackName = "bug_synth"
+
+[node name="Rattlesnake" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1596, 446)
+TrackName = "rattlesnake"
+
+[node name="Frog_1" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1596, 728)
+TrackName = "frog_1"
+
+[node name="Frog_2" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1338, 785)
+TrackName = "frog_2"
+
+[node name="Frog_3" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1559, 901)
+TrackName = "frog_3"
+
+[node name="Bug_accordion" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(904, 580)
+TrackName = "bug_accordion"
+
+[node name="Rabbit_trumpet" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(470, 699)
+TrackName = "rabbit_trumpet"
+
+[node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(874, 844)
+TrackName = "gerbil_kickdrum"
+
+[node name="Spider_strings" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(278, 69)
+TrackName = "gerbil_kickdrum"
 
 [node name="FMODController" type="Node2D" parent="."]
 script = ExtResource("10_ii6re")
 event = ExtResource("11_mynk3")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]
+[connection signal="ToggleTrack" from="Bird_1" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_bass" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bug_synth" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Rattlesnake" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_1" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_2" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_3" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bug_accordion" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Rabbit_trumpet" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Gerbil_kickdrum" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Spider_strings" to="FMODController" method="_on_track_toggle"]

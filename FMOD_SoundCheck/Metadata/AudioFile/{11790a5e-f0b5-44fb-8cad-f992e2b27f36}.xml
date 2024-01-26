@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{63672f1d-e9d5-4e07-b5d3-29dbc7780d9d}">
+	<object class="AudioFile" id="{11790a5e-f0b5-44fb-8cad-f992e2b27f36}">
 		<property name="assetPath">
-			<value>MUSIC_bird_2.wav</value>
+			<value>MUSIC_caterpillar.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>3.9382086167800452</value>
+			<value>3.9577324263038549</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{022026e9-8517-4d60-8941-827085de991a}</destination>

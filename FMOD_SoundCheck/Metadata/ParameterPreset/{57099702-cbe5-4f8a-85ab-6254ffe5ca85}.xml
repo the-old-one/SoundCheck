@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{57099702-cbe5-4f8a-85ab-6254ffe5ca85}">
+		<property name="name">
+			<value>rattlesnake</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a1ea3efd-4638-41ea-96ce-420916473357}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0d8c3daf-bff4-4ee8-82bc-dfef98027417}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0d8c3daf-bff4-4ee8-82bc-dfef98027417}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Off</value>
+			<value>On</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

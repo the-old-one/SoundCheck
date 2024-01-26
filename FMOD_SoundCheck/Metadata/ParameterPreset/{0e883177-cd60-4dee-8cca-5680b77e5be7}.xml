@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{0e883177-cd60-4dee-8cca-5680b77e5be7}">
+		<property name="name">
+			<value>bird_3</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a1ea3efd-4638-41ea-96ce-420916473357}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Off</value>
+			<value>On</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

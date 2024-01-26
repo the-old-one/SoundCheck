@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{7fe07f6c-65c5-4bff-97cf-cfd7725f63c1}">
+		<property name="name">
+			<value>frog_3</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a1ea3efd-4638-41ea-96ce-420916473357}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{46e9615a-e3ed-4171-be88-17f3e4a6b190}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{46e9615a-e3ed-4171-be88-17f3e4a6b190}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Off</value>
+			<value>On</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

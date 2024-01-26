@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c9f89db2-3c9a-4dee-b54c-bbd988076295}">
+		<property name="name">
+			<value>bug_accordion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a1ea3efd-4638-41ea-96ce-420916473357}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cadcd4b6-ed2b-4064-8341-02afeab2b20e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cadcd4b6-ed2b-4064-8341-02afeab2b20e}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Off</value>
+			<value>On</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

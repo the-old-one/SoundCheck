@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgjaew8xq61vw"
-path="res://.godot/imported/bus_icon.svg-c3b0526565bf49c99329b343e8d00a40.ctex"
+path="res://.godot/imported/bus_icon.svg-3417f83f2330bfc70b3b03511058f5a9.ctex"
 metadata={
 "has_editor_variant": true,
 "vram_texture": false
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/FMOD/editor/images/bus_icon.svg"
-dest_files=["res://.godot/imported/bus_icon.svg-c3b0526565bf49c99329b343e8d00a40.ctex"]
+source_file="res://addons/FMOD/native/editor/images/bus_icon.svg"
+dest_files=["res://.godot/imported/bus_icon.svg-3417f83f2330bfc70b3b03511058f5a9.ctex"]
 
 [params]
 

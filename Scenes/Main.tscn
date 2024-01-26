@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=13 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -8,8 +8,12 @@
 [ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="4_bblme"]
 [ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
+[ext_resource type="Texture2D" uid="uid://c7tajfa2b12ob" path="res://Assets/Images/Spotlight.png" id="8_7it6c"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b6q8"]
+blend_mode = 1
 
 [node name="Main" type="Node2D"]
 
@@ -47,6 +51,13 @@ event = ExtResource("4_bblme")
 modulate = Color(0.25, 0.5, 0.5, 1)
 position = Vector2(960, 540)
 texture = ExtResource("7_3ifmd")
+
+[node name="Spotlight" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("CanvasItemMaterial_3b6q8")
+position = Vector2(480, 758)
+scale = Vector2(1.64, 1)
+texture = ExtResource("8_7it6c")
 
 [node name="Bird_1" parent="." instance=ExtResource("8_0iyqr")]
 

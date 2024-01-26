@@ -8,12 +8,20 @@ public partial class ClickableSprite : Area2D
 	[Export]
 	public string TrackName;
 	public bool IsActive;
+	
+	private Vector2 originalScale;
+
+	private AnimatedSprite2D sprite;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		this.InputEvent += OnClick;
-		SetTint(IsActive, 0f);
-		
+		sprite = GetNodeOrNull<AnimatedSprite2D>("Sprite");
+		if (sprite != null)
+		{
+			originalScale = sprite.Scale;
+		}
+		SetActive(IsActive, 0f);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -34,27 +42,27 @@ public partial class ClickableSprite : Area2D
 	{
 		IsActive = !IsActive;
 		EmitSignal(SignalName.ToggleTrack, TrackName, IsActive);
-		SetTint(IsActive);
+		SetActive(IsActive);
 	}
 
-	private void SetTint(bool tintOn, float duration = 0.5f)
+	private void SetActive(bool active, float duration = 0.5f)
 	{
 		var transitionDuration = duration;
-		if (tintOn)
+		if (active)
 		{
+			if (sprite == null) return;
 			Tween tween = GetTree().CreateTween().SetParallel(true);
-			tween.TweenProperty(GetNode("Sprite"), "modulate", new Color(1, 1, 1, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-			tween.TweenProperty(GetNode("Sprite"), "scale", new Vector2(1.1f, 1.1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-
-			// this.Modulate = new Color(1, 1, 1, 1);
+			tween.TweenProperty(sprite, "modulate", new Color(1, 1, 1, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			tween.TweenProperty(sprite, "scale", new Vector2(originalScale.X + 0.1f, originalScale.Y + 0.1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			sprite.Play("active");
 		}
 		else
 		{
+			if (sprite == null) return;
 			Tween tween = GetTree().CreateTween().SetParallel(true);
-			tween.TweenProperty(GetNode("Sprite"), "modulate", new Color(0.2f, 0.4f, 0.4f, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-			tween.TweenProperty(GetNode("Sprite"), "scale", new Vector2(1f, 1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-
-			// this.Modulate = new Color(1, 1, 1, 0.5f);
+			tween.TweenProperty(sprite, "modulate", new Color(0.2f, 0.4f, 0.4f, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			tween.TweenProperty(sprite, "scale", originalScale, transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			sprite.Play("idle");
 		}
 	}
 }

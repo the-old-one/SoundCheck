@@ -1,8 +1,0 @@
-[gd_resource type="EventAsset" format=3 uid="uid://01nt3ky08iec"]
-
-[resource]
-min_distance = 1.0
-max_distance = 20.0
-path = "event:/BGM"
-guid = "{9181bd78-0e38-4e58-b20b-bdcf5c607f05}"
-name = "BGM"

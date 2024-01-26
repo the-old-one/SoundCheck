@@ -1,8 +1,0 @@
-[gd_resource type="BankAsset" format=3 uid="uid://dotk7l247nr0a"]
-
-[resource]
-file_path = "res://FMOD_SoundCheck/Build/Desktop/Master.bank"
-modified_time = 1706231194
-path = "bank:/Master"
-guid = "{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}"
-name = "Master"

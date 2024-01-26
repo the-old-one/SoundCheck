@@ -1,13 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=2 format=3 uid="uid://xti1sy0vy7tm"]
 
-[ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
-[ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
-[ext_resource type="Texture2D" uid="uid://daaon5slkyt24" path="res://icon.svg" id="2_ivar4"]
-[ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="3_bytus"]
-[ext_resource type="Script" path="res://Scenes/Button1_Sound.gd" id="3_p5htt"]
-[ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="4_bblme"]
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_civaa"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_civaa")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -25,34 +21,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 100
 text = "TEST"
-
-[node name="Control" type="Control" parent="CanvasLayer"]
-custom_minimum_size = Vector2(10, 10)
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Button" type="Button" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "Press Me"
-icon = ExtResource("2_ivar4")
-
-[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="CanvasLayer/Control/Button"]
-event = ExtResource("2_5h313")
-script = ExtResource("3_p5htt")
-
-[node name="StudioBankLoader" type="StudioBankLoader" parent="."]
-load_on = 1
-num_banks = 2
-bank_0 = ExtResource("2_dxf4c")
-bank_1 = ExtResource("3_bytus")
-
-[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="."]
-play_event = 1
-stop_event = 3
-event = ExtResource("4_bblme")
-
-[connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]

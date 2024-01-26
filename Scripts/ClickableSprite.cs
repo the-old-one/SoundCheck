@@ -12,7 +12,8 @@ public partial class ClickableSprite : Area2D
 	public override void _Ready()
 	{
 		this.InputEvent += OnClick;
-		SetTint(IsActive);
+		SetTint(IsActive, 0f);
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,15 +37,24 @@ public partial class ClickableSprite : Area2D
 		SetTint(IsActive);
 	}
 
-	private void SetTint(bool tintOn)
+	private void SetTint(bool tintOn, float duration = 0.5f)
 	{
+		var transitionDuration = duration;
 		if (tintOn)
 		{
-			this.Modulate = new Color(1, 1, 1, 1);
+			Tween tween = GetTree().CreateTween().SetParallel(true);
+			tween.TweenProperty(GetNode("Sprite"), "modulate", new Color(1, 1, 1, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			tween.TweenProperty(GetNode("Sprite"), "scale", new Vector2(1.1f, 1.1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+
+			// this.Modulate = new Color(1, 1, 1, 1);
 		}
 		else
 		{
-			this.Modulate = new Color(1, 1, 1, 0.5f);
+			Tween tween = GetTree().CreateTween().SetParallel(true);
+			tween.TweenProperty(GetNode("Sprite"), "modulate", new Color(0.2f, 0.4f, 0.4f, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+			tween.TweenProperty(GetNode("Sprite"), "scale", new Vector2(1f, 1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
+
+			// this.Modulate = new Color(1, 1, 1, 0.5f);
 		}
 	}
 }

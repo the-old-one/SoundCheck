@@ -44,6 +44,7 @@ stop_event = 3
 event = ExtResource("4_bblme")
 
 [node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.25, 0.5, 0.5, 1)
 position = Vector2(960, 540)
 texture = ExtResource("7_3ifmd")
 
@@ -57,13 +58,45 @@ TrackName = "bird_2"
 position = Vector2(1042, 284)
 TrackName = "bird_3"
 
-[node name="Bird_4" parent="." instance=ExtResource("8_0iyqr")]
+[node name="Bird_bass" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(1228, 276)
 TrackName = "bird_bass"
 
-[node name="Bird_5" parent="." instance=ExtResource("8_0iyqr")]
+[node name="Bug_synth" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(1228, 546)
 TrackName = "bug_synth"
+
+[node name="Rattlesnake" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1596, 446)
+TrackName = "rattlesnake"
+
+[node name="Frog_1" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1596, 728)
+TrackName = "frog_1"
+
+[node name="Frog_2" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1338, 785)
+TrackName = "frog_2"
+
+[node name="Frog_3" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1559, 901)
+TrackName = "frog_3"
+
+[node name="Bug_accordion" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(904, 580)
+TrackName = "bug_accordion"
+
+[node name="Rabbit_trumpet" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(470, 699)
+TrackName = "rabbit_trumpet"
+
+[node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(874, 844)
+TrackName = "gerbil_kickdrum"
+
+[node name="Spider_strings" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(278, 69)
+TrackName = "gerbil_kickdrum"
 
 [node name="FMODController" type="Node2D" parent="."]
 script = ExtResource("10_ii6re")
@@ -73,5 +106,13 @@ event = ExtResource("11_mynk3")
 [connection signal="ToggleTrack" from="Bird_1" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Bird_4" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Bird_5" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_bass" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bug_synth" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Rattlesnake" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_1" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_2" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_3" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bug_accordion" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Rabbit_trumpet" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Gerbil_kickdrum" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Spider_strings" to="FMODController" method="_on_track_toggle"]

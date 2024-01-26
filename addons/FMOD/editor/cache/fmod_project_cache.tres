@@ -1,0 +1,61 @@
+[gd_resource type="ProjectCache" load_steps=7 format=3 uid="uid://cbmw14xjljjf8"]
+
+[ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="1_cxr46"]
+[ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="2_00gkk"]
+[ext_resource type="BusAsset" uid="uid://df5s2q6kfxpic" path="res://addons/FMOD/editor/resources/busses/{fd56833c-4fe9-4ac4-a6ce-d9089c118024}.tres" id="3_jq6wy"]
+[ext_resource type="BusAsset" uid="uid://do0hx12fa85xw" path="res://addons/FMOD/editor/resources/busses/{332c9e16-88fe-499b-9ad3-d4a15382af8d}.tres" id="4_ptv0b"]
+[ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="5_lifov"]
+[ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="6_sak2u"]
+
+[resource]
+banks = {
+"{2c9ad742-8356-0293-3b26-4ec8c53f8d43}": ExtResource("2_00gkk"),
+"{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}": ExtResource("1_cxr46")
+}
+events = {
+"{26a7f988-a3c5-4864-b9ad-db3c0601772a}": ExtResource("6_sak2u"),
+"{9181bd78-0e38-4e58-b20b-bdcf5c607f05}": ExtResource("5_lifov")
+}
+busses = {
+"{332c9e16-88fe-499b-9ad3-d4a15382af8d}": ExtResource("4_ptv0b"),
+"{fd56833c-4fe9-4ac4-a6ce-d9089c118024}": ExtResource("3_jq6wy")
+}
+bank_tree = [{
+"children": [],
+"item_type": 3,
+"node_name": "Master",
+"path": "bank:/Master",
+"resource": ExtResource("1_cxr46")
+}, {
+"children": [],
+"item_type": 3,
+"node_name": "Master.strings",
+"path": "bank:/Master.strings",
+"resource": ExtResource("2_00gkk")
+}]
+event_tree = [{
+"children": [],
+"item_type": 1,
+"node_name": "BGM",
+"path": "event:/BGM",
+"resource": ExtResource("5_lifov")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "UI_Button_Press",
+"path": "event:/UI_Button_Press",
+"resource": ExtResource("6_sak2u")
+}]
+bus_tree = [{
+"children": [{
+"children": [],
+"item_type": 4,
+"node_name": "Reverb",
+"path": "bus:/Reverb",
+"resource": ExtResource("4_ptv0b")
+}],
+"item_type": 4,
+"node_name": "bus:",
+"path": "bus:/",
+"resource": ExtResource("3_jq6wy")
+}]

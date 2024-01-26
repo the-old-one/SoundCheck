@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b430ffa5-cae8-428e-9eb1-747a6774c572}">
+		<property name="assetPath">
+			<value>ANIMAL WILD Camel D, Grunt, Groan, Roar, Gargle x10.wav 07.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.2242083333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{022026e9-8517-4d60-8941-827085de991a}</destination>
+		</relationship>
+	</object>
+</objects>

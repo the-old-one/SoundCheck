@@ -1,0 +1,79 @@
+[gd_resource type="ProjectCache" load_steps=6 format=3 uid="uid://cbmw14xjljjf8"]
+
+[sub_resource type="BankAsset" id="BankAsset_cghp7"]
+file_path = "res://Desktop/Master.bank"
+modified_time = 1706077355
+path = "bank:/Master"
+guid = "{71054d4b-1a12-487b-ad31-05ff3fe495b1}"
+name = "Master"
+
+[sub_resource type="BankAsset" id="BankAsset_8srfu"]
+file_path = "res://Desktop/Master.strings.bank"
+modified_time = 1706077355
+path = "bank:/Master.strings"
+guid = "{e9186d9f-6b69-0439-2b78-8f01ce179329}"
+name = "Master.strings"
+
+[sub_resource type="BusAsset" id="BusAsset_oo72c"]
+path = "bus:/"
+guid = "{13c545c6-c973-4527-b276-29f4e0342905}"
+name = "Master"
+
+[sub_resource type="BusAsset" id="BusAsset_xqdda"]
+path = "bus:/Reverb"
+guid = "{1f6dbf46-01f2-4929-aae7-87440ea82715}"
+name = "Reverb"
+
+[sub_resource type="EventAsset" id="EventAsset_rvbfk"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/BGM"
+guid = "{db0e11c2-afaf-4ad4-8049-df6ea5c7f794}"
+name = "BGM"
+
+[resource]
+banks = {
+"{71054d4b-1a12-487b-ad31-05ff3fe495b1}": SubResource("BankAsset_cghp7"),
+"{e9186d9f-6b69-0439-2b78-8f01ce179329}": SubResource("BankAsset_8srfu")
+}
+events = {
+"{db0e11c2-afaf-4ad4-8049-df6ea5c7f794}": SubResource("EventAsset_rvbfk")
+}
+busses = {
+"{13c545c6-c973-4527-b276-29f4e0342905}": SubResource("BusAsset_oo72c"),
+"{1f6dbf46-01f2-4929-aae7-87440ea82715}": SubResource("BusAsset_xqdda")
+}
+bank_tree = [{
+"children": [],
+"item_type": 3,
+"node_name": "Master",
+"path": "bank:/Master",
+"resource": SubResource("BankAsset_cghp7")
+}, {
+"children": [],
+"item_type": 3,
+"node_name": "Master.strings",
+"path": "bank:/Master.strings",
+"resource": SubResource("BankAsset_8srfu")
+}]
+event_tree = [{
+"children": [],
+"item_type": 1,
+"node_name": "BGM",
+"path": "event:/BGM",
+"resource": SubResource("EventAsset_rvbfk")
+}]
+bus_tree = [{
+"children": [{
+"children": [],
+"item_type": 4,
+"node_name": "Reverb",
+"path": "bus:/Reverb",
+"resource": SubResource("BusAsset_xqdda")
+}],
+"item_type": 4,
+"node_name": "bus:",
+"path": "bus:/",
+"resource": SubResource("BusAsset_oo72c")
+}]

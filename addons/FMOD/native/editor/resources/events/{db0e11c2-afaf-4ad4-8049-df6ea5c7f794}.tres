@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://dht4konsflxgu"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/BGM"
+guid = "{db0e11c2-afaf-4ad4-8049-df6ea5c7f794}"
+name = "BGM"

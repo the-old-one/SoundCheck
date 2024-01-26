@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="MasterAssetFolder" id="{022026e9-8517-4d60-8941-827085de991a}" />
+	<object class="MasterAssetFolder" id="{022026e9-8517-4d60-8941-827085de991a}">
+		<property name="dawProjectSourceDirectory">
+			<value>../../../../OneDrive/Documents/REAPER Media/GGJ2024</value>
+		</property>
+	</object>
 </objects>

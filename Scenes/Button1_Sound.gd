@@ -9,7 +9,3 @@ func _on_button_pressed():
 	print("play random sfx")
 	FMODRuntime.play_one_shot(event)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-

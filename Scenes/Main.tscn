@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=13 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
 [ext_resource type="Script" path="res://Scripts/ClickableSprite.cs" id="8_e1m04"]
 [ext_resource type="Script" path="res://Scripts/Emitter2D.cs" id="9_8x7fv"]
+[ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
+[ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lm7px"]
 radius = 68.0
@@ -50,18 +52,22 @@ event = ExtResource("4_bblme")
 position = Vector2(960, 540)
 texture = ExtResource("7_3ifmd")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Clickable" type="Area2D" parent="."]
 position = Vector2(633, 267)
 script = ExtResource("8_e1m04")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable"]
 shape = SubResource("CircleShape2D_lm7px")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Clickable"]
 texture = ExtResource("2_ivar4")
 
-[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="Area2D"]
+[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="Clickable"]
 event = ExtResource("2_5h313")
 script = ExtResource("9_8x7fv")
+
+[node name="FMODController" type="Node2D" parent="."]
+script = ExtResource("10_ii6re")
+event = ExtResource("11_mynk3")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]

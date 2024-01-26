@@ -1,0 +1,257 @@
+[gd_resource type="EventAsset" load_steps=40 format=3 uid="uid://dlm8jaov7mi0g"]
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_ay3rh"]
+data1 = 1986590898
+data2 = 2127785424
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_ctvs6"]
+name = "rattlesnake"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_ay3rh")
+maximum = 1.0
+flags = 24
+guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_okd8y"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_ctvs6")
+labels = ["Off", "On"]
+path = "parameter:/rattlesnake"
+guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
+name = "rattlesnake"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_2ftst"]
+data1 = 2489699176
+data2 = 480656516
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_mjwxh"]
+name = "bird_3"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_2ftst")
+maximum = 1.0
+flags = 24
+guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_1viej"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_mjwxh")
+labels = ["Off", "On"]
+path = "parameter:/bird_3"
+guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
+name = "bird_3"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_shaw5"]
+data1 = 1610407862
+data2 = 4083778928
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_s43bs"]
+name = "spider"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_shaw5")
+maximum = 1.0
+flags = 24
+guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_0fqyh"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_s43bs")
+labels = ["Off", "On"]
+path = "parameter:/spider"
+guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
+name = "spider"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_u4aue"]
+data1 = 1215891596
+data2 = 1247145853
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_yr4ip"]
+name = "bird_bass"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_u4aue")
+maximum = 1.0
+flags = 24
+guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_nynow"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_yr4ip")
+labels = ["Off", "On"]
+path = "parameter:/bird_bass"
+guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
+name = "bird_bass"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_u5asj"]
+data1 = 411660529
+data2 = 1023001101
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_8752b"]
+name = "frog_3"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_u5asj")
+maximum = 1.0
+flags = 24
+guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_vdebf"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_8752b")
+labels = ["Off", "On"]
+path = "parameter:/frog_3"
+guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
+name = "frog_3"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_554n7"]
+data1 = 3009183414
+data2 = 1153119927
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_ge2a5"]
+name = "rabbit_trombone"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_554n7")
+maximum = 1.0
+flags = 24
+guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_6oeto"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_ge2a5")
+labels = ["Off", "On"]
+path = "parameter:/rabbit_trombone"
+guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
+name = "rabbit_trombone"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_i7j68"]
+data1 = 2313067666
+data2 = 2703357443
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_oij2v"]
+name = "gerbil_kickdrum"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_i7j68")
+maximum = 1.0
+flags = 24
+guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_2jvk1"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_oij2v")
+labels = ["Off", "On"]
+path = "parameter:/gerbil_kickdrum"
+guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
+name = "gerbil_kickdrum"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_bhdui"]
+data1 = 1105894627
+data2 = 1131734255
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_tjof7"]
+name = "frog_1"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_bhdui")
+maximum = 1.0
+flags = 24
+guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_2ry0y"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_tjof7")
+labels = ["Off", "On"]
+path = "parameter:/frog_1"
+guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
+name = "frog_1"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_wj73g"]
+data1 = 2819913704
+data2 = 1118274002
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_a687y"]
+name = "bird_2"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_wj73g")
+maximum = 1.0
+flags = 24
+guid = "{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_hj4ot"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_a687y")
+labels = ["Off", "On"]
+path = "parameter:/bird_2"
+guid = "{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}"
+name = "bird_2"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_seimj"]
+data1 = 1914119733
+data2 = 4101635463
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_t4rsm"]
+name = "bird_1"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_seimj")
+maximum = 1.0
+flags = 24
+guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_yualq"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_t4rsm")
+labels = ["Off", "On"]
+path = "parameter:/bird_1"
+guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
+name = "bird_1"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_qw23l"]
+data1 = 2916774501
+data2 = 3520813379
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_fous7"]
+name = "bug_accordion"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_qw23l")
+maximum = 1.0
+flags = 24
+guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_6dn05"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_fous7")
+labels = ["Off", "On"]
+path = "parameter:/bug_accordion"
+guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
+name = "bug_accordion"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_46mlm"]
+data1 = 417272328
+data2 = 3263408743
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_da583"]
+name = "bug_synth"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_46mlm")
+maximum = 1.0
+flags = 24
+guid = "{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_v2cjw"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_da583")
+labels = ["Off", "On"]
+path = "parameter:/bug_synth"
+guid = "{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}"
+name = "bug_synth"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_bekio"]
+data1 = 116888673
+data2 = 3173459883
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_nwett"]
+name = "frog_2"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_bekio")
+maximum = 1.0
+flags = 24
+guid = "{f895056b-2527-4b09-be7c-d37d7133c750}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_80imo"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_nwett")
+labels = ["Off", "On"]
+path = "parameter:/frog_2"
+guid = "{f895056b-2527-4b09-be7c-d37d7133c750}"
+name = "frog_2"
+
+[resource]
+min_distance = 1.0
+max_distance = 20.0
+parameters = {
+"{0d8c3daf-bff4-4ee8-82bc-dfef98027417}": SubResource("ParameterAsset_okd8y"),
+"{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}": SubResource("ParameterAsset_1viej"),
+"{2fca4fbc-09ed-443d-8651-b31c5ab108db}": SubResource("ParameterAsset_0fqyh"),
+"{37e83e3f-5064-4613-baf6-6733f6d17ce0}": SubResource("ParameterAsset_nynow"),
+"{46e9615a-e3ed-4171-be88-17f3e4a6b190}": SubResource("ParameterAsset_vdebf"),
+"{4e8dd100-d095-4b5f-9412-6449825a5619}": SubResource("ParameterAsset_6oeto"),
+"{7da55944-5f64-4c83-afd8-4a4751b8a33c}": SubResource("ParameterAsset_2jvk1"),
+"{84bedee8-b760-4a24-9b22-b1b51a10f02b}": SubResource("ParameterAsset_2ry0y"),
+"{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}": SubResource("ParameterAsset_hj4ot"),
+"{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}": SubResource("ParameterAsset_yualq"),
+"{cadcd4b6-ed2b-4064-8341-02afeab2b20e}": SubResource("ParameterAsset_6dn05"),
+"{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}": SubResource("ParameterAsset_v2cjw"),
+"{f895056b-2527-4b09-be7c-d37d7133c750}": SubResource("ParameterAsset_80imo")
+}
+path = "event:/MUSIC_Animal_Orchestra"
+guid = "{a0df9f58-6968-4450-a474-8ae7e5cbb729}"
+name = "MUSIC_Animal_Orchestra"

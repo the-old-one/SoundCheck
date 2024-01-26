@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=11 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -7,13 +7,9 @@
 [ext_resource type="Script" path="res://Scenes/Button1_Sound.gd" id="3_p5htt"]
 [ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="4_bblme"]
 [ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
-[ext_resource type="Script" path="res://Scripts/ClickableSprite.cs" id="8_e1m04"]
-[ext_resource type="Script" path="res://Scripts/Emitter2D.cs" id="9_8x7fv"]
+[ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_lm7px"]
-radius = 68.0
 
 [node name="Main" type="Node2D"]
 
@@ -44,7 +40,6 @@ bank_0 = ExtResource("2_dxf4c")
 bank_1 = ExtResource("3_bytus")
 
 [node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="."]
-play_event = 1
 stop_event = 3
 event = ExtResource("4_bblme")
 
@@ -52,22 +47,31 @@ event = ExtResource("4_bblme")
 position = Vector2(960, 540)
 texture = ExtResource("7_3ifmd")
 
-[node name="Clickable" type="Area2D" parent="."]
-position = Vector2(633, 267)
-script = ExtResource("8_e1m04")
+[node name="Bird_1" parent="." instance=ExtResource("8_0iyqr")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable"]
-shape = SubResource("CircleShape2D_lm7px")
+[node name="Bird_2" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(832, 284)
+TrackName = "bird_2"
 
-[node name="Sprite2D" type="Sprite2D" parent="Clickable"]
-texture = ExtResource("2_ivar4")
+[node name="Bird_3" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1042, 284)
+TrackName = "bird_3"
 
-[node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="Clickable"]
-event = ExtResource("2_5h313")
-script = ExtResource("9_8x7fv")
+[node name="Bird_4" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1228, 276)
+TrackName = "bird_bass"
+
+[node name="Bird_5" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1228, 546)
+TrackName = "bug_synth"
 
 [node name="FMODController" type="Node2D" parent="."]
 script = ExtResource("10_ii6re")
 event = ExtResource("11_mynk3")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]
+[connection signal="ToggleTrack" from="Bird_1" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_4" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Bird_5" to="FMODController" method="_on_track_toggle"]

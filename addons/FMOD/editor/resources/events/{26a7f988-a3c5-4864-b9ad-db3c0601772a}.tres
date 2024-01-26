@@ -1,0 +1,9 @@
+[gd_resource type="EventAsset" format=3 uid="uid://cf14mosv0vf0i"]
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/UI_Button_Press"
+guid = "{26a7f988-a3c5-4864-b9ad-db3c0601772a}"
+name = "UI_Button_Press"

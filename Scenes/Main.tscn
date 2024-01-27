@@ -1,4 +1,4 @@
-[gd_scene load_steps=136 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=137 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -76,37 +76,37 @@
 [ext_resource type="Texture2D" uid="uid://3ofq3irbh80o" path="res://Assets/Animations/frog_1/Frog_1-5.png" id="65_k1ruw"]
 [ext_resource type="Texture2D" uid="uid://b8alm4dnq56u5" path="res://Assets/Animations/frog_1/Frog_1-6.png" id="66_1bhr3"]
 [ext_resource type="Texture2D" uid="uid://b86y8t5qwtgel" path="res://Assets/Animations/frog_1/Frog_1-7.png" id="67_4icnr"]
-[ext_resource type="Texture2D" uid="uid://ds7mpvrer3bns" path="res://Assets/Animations/accordion/Accordion-1.png" id="69_py54h"]
-[ext_resource type="Texture2D" uid="uid://b73b2hrw1i35j" path="res://Assets/Animations/accordion/Accordion-2.png" id="70_k0aak"]
-[ext_resource type="Texture2D" uid="uid://bucs210q22ncn" path="res://Assets/Animations/accordion/Accordion-3.png" id="71_80h7d"]
+[ext_resource type="Texture2D" uid="uid://drjxx6366fnlw" path="res://Assets/Animations/accordion/Accordion-1.png" id="69_py54h"]
+[ext_resource type="Texture2D" uid="uid://d3g7uml7c8ad7" path="res://Assets/Animations/accordion/Accordion-2.png" id="70_k0aak"]
+[ext_resource type="Texture2D" uid="uid://w860mmxrrxwe" path="res://Assets/Animations/accordion/Accordion-3.png" id="71_80h7d"]
 [ext_resource type="Texture2D" uid="uid://bxiyyet05y3r4" path="res://Assets/Animations/spider/Spider-1.png" id="71_gqsuq"]
 [ext_resource type="Texture2D" uid="uid://yay36yr7csbw" path="res://Assets/Animations/spider/Spider-2.png" id="72_lgj0s"]
 [ext_resource type="Texture2D" uid="uid://cv3a8u81b71vh" path="res://Assets/Animations/frog_1/Frog_blinking-2.png" id="72_mj11e"]
-[ext_resource type="Texture2D" uid="uid://dil7cqph72en1" path="res://Assets/Animations/accordion/Accordion-4.png" id="72_quh6i"]
+[ext_resource type="Texture2D" uid="uid://dojlu68n7u6rj" path="res://Assets/Animations/accordion/Accordion-4.png" id="72_quh6i"]
 [ext_resource type="Texture2D" uid="uid://cb36tao4n7vcx" path="res://Assets/Animations/frog_1/Frog_blinking-3.png" id="73_0q52s"]
-[ext_resource type="Texture2D" uid="uid://cl42a3jrhehbo" path="res://Assets/Animations/accordion/Accordion-5.png" id="73_ispqa"]
+[ext_resource type="Texture2D" uid="uid://bbu3ax5h1opsf" path="res://Assets/Animations/accordion/Accordion-5.png" id="73_ispqa"]
 [ext_resource type="Texture2D" uid="uid://b76uvoxf7nwtr" path="res://Assets/Animations/spider/Spider-3.png" id="73_mp576"]
 [ext_resource type="Texture2D" uid="uid://y1xfts353mbe" path="res://Assets/Animations/spider/Spider-4.png" id="74_h1ug1"]
-[ext_resource type="Texture2D" uid="uid://bukhd22acy22x" path="res://Assets/Animations/accordion/Accordion-6.png" id="74_wn7kp"]
-[ext_resource type="Texture2D" uid="uid://cjbaorpu3mikx" path="res://Assets/Animations/accordion/Accordion-7.png" id="75_0s2mu"]
+[ext_resource type="Texture2D" uid="uid://bncbu0l8milap" path="res://Assets/Animations/accordion/Accordion-6.png" id="74_wn7kp"]
+[ext_resource type="Texture2D" uid="uid://cau6aao515aen" path="res://Assets/Animations/accordion/Accordion-7.png" id="75_0s2mu"]
 [ext_resource type="Texture2D" uid="uid://cqok2ewuj2rqn" path="res://Assets/Animations/spider/Spider-5.png" id="75_x1w2d"]
 [ext_resource type="Texture2D" uid="uid://1ds5sg2jdbvp" path="res://Assets/Animations/spider/Spider-6.png" id="76_55qer"]
-[ext_resource type="Texture2D" uid="uid://c2jixe1n5pyaa" path="res://Assets/Animations/accordion/Accordion-8.png" id="76_k0wce"]
-[ext_resource type="Texture2D" uid="uid://bnqejgt041u6t" path="res://Assets/Animations/accordion/Accordion-9.png" id="77_byg4v"]
+[ext_resource type="Texture2D" uid="uid://buompnre4wlp" path="res://Assets/Animations/accordion/Accordion-8.png" id="76_k0wce"]
+[ext_resource type="Texture2D" uid="uid://cq6aa1ry0bux0" path="res://Assets/Animations/accordion/Accordion-9.png" id="77_byg4v"]
 [ext_resource type="Texture2D" uid="uid://bhrcek20qj824" path="res://Assets/Animations/spider/Spider-7.png" id="77_g8pni"]
-[ext_resource type="Texture2D" uid="uid://cpp3wf5wrok6s" path="res://Assets/Animations/accordion/Accordion-10.png" id="78_vg5po"]
+[ext_resource type="Texture2D" uid="uid://blgwgp3es6wq6" path="res://Assets/Animations/accordion/Accordion-10.png" id="78_vg5po"]
 [ext_resource type="Texture2D" uid="uid://cflc6c8gty7yq" path="res://Assets/Animations/spider/Spider-8.png" id="78_y4wms"]
-[ext_resource type="Texture2D" uid="uid://cdfcsofxoaqty" path="res://Assets/Animations/accordion/Accordion-11.png" id="79_1g41x"]
+[ext_resource type="Texture2D" uid="uid://b7p87lnbh7cqe" path="res://Assets/Animations/accordion/Accordion-11.png" id="79_1g41x"]
 [ext_resource type="Texture2D" uid="uid://bhl31lqo221rw" path="res://Assets/Animations/spider/Spider-9.png" id="79_1r7vj"]
 [ext_resource type="Texture2D" uid="uid://x1kxawcv3v30" path="res://Assets/Animations/spider/Spider-10.png" id="80_qix4y"]
-[ext_resource type="Texture2D" uid="uid://b0fv1lvitrnq" path="res://Assets/Animations/accordion/Accordion-12.png" id="80_v0bim"]
+[ext_resource type="Texture2D" uid="uid://bica3mle8gar8" path="res://Assets/Animations/accordion/Accordion-12.png" id="80_v0bim"]
 [ext_resource type="Texture2D" uid="uid://dmr52n0cu1rq1" path="res://Assets/Animations/spider/Spider-11.png" id="81_bdxfj"]
-[ext_resource type="Texture2D" uid="uid://chkbae8k2porc" path="res://Assets/Animations/accordion/Accordion-13.png" id="81_wrj8f"]
-[ext_resource type="Texture2D" uid="uid://cfeqnkv6hlp41" path="res://Assets/Animations/accordion/Accordion-14.png" id="82_p1xl2"]
+[ext_resource type="Texture2D" uid="uid://cpcgqr4xyjd4k" path="res://Assets/Animations/accordion/Accordion-13.png" id="81_wrj8f"]
+[ext_resource type="Texture2D" uid="uid://7xy7aadjsda7" path="res://Assets/Animations/accordion/Accordion-14.png" id="82_p1xl2"]
 [ext_resource type="Texture2D" uid="uid://k37spocxc6w4" path="res://Assets/Animations/spider/Spider-12.png" id="82_wggqs"]
 [ext_resource type="Texture2D" uid="uid://ciouyitcmmllm" path="res://Assets/Animations/spider/Spider-13.png" id="83_6inqv"]
-[ext_resource type="Texture2D" uid="uid://da6wopa0y8nwi" path="res://Assets/Animations/accordion/Accordion-15.png" id="83_lbv6u"]
-[ext_resource type="Texture2D" uid="uid://cp38cc8o2alkn" path="res://Assets/Animations/accordion/Accordion-16.png" id="84_4m4ka"]
+[ext_resource type="Texture2D" uid="uid://dlmomy6jfuj5o" path="res://Assets/Animations/accordion/Accordion-15.png" id="83_lbv6u"]
+[ext_resource type="Texture2D" uid="uid://iboyvbvyoafj" path="res://Assets/Animations/accordion/Accordion-16.png" id="84_4m4ka"]
 [ext_resource type="Texture2D" uid="uid://dr444xpr36k81" path="res://Assets/Animations/spider/Spider-14.png" id="84_7x20h"]
 [ext_resource type="Texture2D" uid="uid://cj65mnixn7gd4" path="res://Assets/Animations/spider/Spider-15.png" id="85_jroxf"]
 [ext_resource type="Texture2D" uid="uid://s7vujsupkkj3" path="res://Assets/Animations/spider/Spider-16.png" id="86_a6rjy"]
@@ -526,6 +526,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_232ah"]
+load_path = "res://.godot/imported/Accordion-1.png-5f9aba5d4daae22b9fec86fb3324f461.ctex"
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_mdpl5"]
 animations = [{
 "frames": [{
@@ -579,14 +582,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"active",
-"speed": 15.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 5.0,
-"texture": ExtResource("69_py54h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("70_k0aak")
+"texture": SubResource("CompressedTexture2D_232ah")
 }],
 "loop": true,
 "name": &"idle",
@@ -963,10 +963,10 @@ position = Vector2(947, 978)
 TrackName = "bug_accordion"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Bug_accordion"]
-position = Vector2(11, 146)
-scale = Vector2(0.821334, 0.821334)
+position = Vector2(-43, 110)
+scale = Vector2(0.654478, 0.654478)
 sprite_frames = SubResource("SpriteFrames_mdpl5")
-animation = &"idle"
+animation = &"active"
 offset = Vector2(139.957, -361.708)
 
 [node name="Rabbit_trumpet" parent="." instance=ExtResource("8_0iyqr")]
@@ -974,14 +974,14 @@ position = Vector2(242, 663)
 TrackName = "rabbit_trumpet"
 
 [node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(631, 610)
+position = Vector2(492, 657)
 TrackName = "gerbil_kickdrum"
 
 [node name="CollisionShape2D" parent="Gerbil_kickdrum" index="0"]
 disabled = true
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Gerbil_kickdrum"]
-position = Vector2(-5.99997, 190)
+position = Vector2(-6, 190)
 scale = Vector2(0.55, 0.55)
 sprite_frames = SubResource("SpriteFrames_tj7xw")
 animation = &"idle"

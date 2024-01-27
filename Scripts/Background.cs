@@ -14,7 +14,7 @@ public partial class Background : Node2D
 	private void OnActiveTracksChangedSignal(int numberOfTracks)
 	{
 		Tween tween = GetTree().CreateTween().SetParallel(true);
-		var colorMult = Mathf.Min(numberOfTracks / 10f, 1.0f) + 0.1f;
+		var colorMult = Mathf.Min(numberOfTracks / 10f, 1.0f) + 0.2f;
 		tween.TweenProperty(this, "modulate", new Color(Mathf.Min(0.5f * colorMult, 1), Mathf.Min(1 * colorMult, 1), Mathf.Min(2 * colorMult, 1), 1), 0.5f).SetTrans(Tween.TransitionType.Sine);
 	}
 }

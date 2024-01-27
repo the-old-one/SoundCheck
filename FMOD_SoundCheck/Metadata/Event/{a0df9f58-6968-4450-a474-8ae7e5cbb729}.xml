@@ -1145,7 +1145,7 @@
 	</object>
 	<object class="NamedMarker" id="{c8667247-99e9-4d09-bc92-424193025922}">
 		<property name="position">
-			<value>1.495566502463054</value>
+			<value>1.4381568144499173</value>
 		</property>
 		<property name="name">
 			<value>frog_1_sing</value>
@@ -1159,7 +1159,7 @@
 	</object>
 	<object class="NamedMarker" id="{d29a1142-7a3a-4498-89af-6d7679bd2010}">
 		<property name="position">
-			<value>0.25</value>
+			<value>0.19259031198686349</value>
 		</property>
 		<property name="name">
 			<value>frog_2_sing</value>
@@ -1173,7 +1173,7 @@
 	</object>
 	<object class="NamedMarker" id="{84183d31-b704-4731-9f06-31683d2d3167}">
 		<property name="position">
-			<value>1.2463054187192117</value>
+			<value>1.188895730706075</value>
 		</property>
 		<property name="name">
 			<value>frog_2_sing</value>
@@ -1187,7 +1187,7 @@
 	</object>
 	<object class="NamedMarker" id="{121a5a13-e000-4051-8c1d-78635fb4f0f7}">
 		<property name="position">
-			<value>2.2509031198686369</value>
+			<value>2.1934934318555008</value>
 		</property>
 		<property name="name">
 			<value>frog_2_sing</value>
@@ -1201,7 +1201,7 @@
 	</object>
 	<object class="NamedMarker" id="{c4e23e8e-55bf-4a20-a037-5aa4f9495ed5}">
 		<property name="position">
-			<value>2.9949096880131361</value>
+			<value>2.9375</value>
 		</property>
 		<property name="name">
 			<value>frog_2_sing</value>
@@ -1215,7 +1215,7 @@
 	</object>
 	<object class="NamedMarker" id="{556821e7-572f-4495-adec-bba34a87b6d3}">
 		<property name="position">
-			<value>0.75</value>
+			<value>0.69259031198686327</value>
 		</property>
 		<property name="name">
 			<value>frog_1_sing</value>
@@ -1229,7 +1229,7 @@
 	</object>
 	<object class="NamedMarker" id="{4d6be808-3492-4e2c-a3a3-57174ff433c1}">
 		<property name="position">
-			<value>1.4993431855500821</value>
+			<value>1.4419334975369453</value>
 		</property>
 		<property name="name">
 			<value>frog_3_sing</value>
@@ -1243,7 +1243,7 @@
 	</object>
 	<object class="NamedMarker" id="{7067b281-18f9-4e72-ad64-28afd20888e0}">
 		<property name="position">
-			<value>2.5228243021346466</value>
+			<value>2.4654146141215105</value>
 		</property>
 		<property name="name">
 			<value>frog_3_sing</value>
@@ -1257,7 +1257,7 @@
 	</object>
 	<object class="NamedMarker" id="{852f367f-296b-47e2-b223-ef27ea0bef80}">
 		<property name="position">
-			<value>3.25</value>
+			<value>3.1925903119868639</value>
 		</property>
 		<property name="name">
 			<value>frog_1_sing</value>
@@ -1369,7 +1369,7 @@
 	</object>
 	<object class="NamedMarker" id="{2fe7b335-2268-4c96-a121-d0ee6df0aeda}">
 		<property name="position">
-			<value>2.7456486042692938</value>
+			<value>2.6882389162561577</value>
 		</property>
 		<property name="name">
 			<value>frog_1_sing</value>

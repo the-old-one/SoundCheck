@@ -12,6 +12,7 @@ public partial class ClickableSprite : Area2D
 	private Vector2 originalScale;
 
 	private AnimatedSprite2D sprite;
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -20,8 +21,16 @@ public partial class ClickableSprite : Area2D
 		if (sprite != null)
 		{
 			originalScale = sprite.Scale;
+			sprite.AnimationFinished += OnActivaAnimationFinished;
 		}
 		SetActive(IsActive, 0f);
+		// find FMODController
+		Callable callable = new Callable(this, MethodName.OnMarkerSignal);
+
+		var fmodController = GetNode<Node2D>("/root/Main/FMODController");
+		
+		fmodController.Connect("marker_called", callable);
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -33,7 +42,6 @@ public partial class ClickableSprite : Area2D
 	{
 		if (@inputEvent.IsActionPressed("click"))
 		{
-			GD.Print("Click");
 			toggleActive();
 		}
 	}
@@ -54,7 +62,7 @@ public partial class ClickableSprite : Area2D
 			Tween tween = GetTree().CreateTween().SetParallel(true);
 			tween.TweenProperty(sprite, "modulate", new Color(1, 1, 1, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
 			tween.TweenProperty(sprite, "scale", new Vector2(originalScale.X + 0.1f, originalScale.Y + 0.1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-			sprite.Play("active");
+			
 		}
 		else
 		{
@@ -64,5 +72,24 @@ public partial class ClickableSprite : Area2D
 			tween.TweenProperty(sprite, "scale", originalScale, transitionDuration).SetTrans(Tween.TransitionType.Sine);
 			sprite.Play("idle");
 		}
+	}
+	
+	private void OnMarkerSignal(string markerName)
+	{
+		// GD.Print("markerName: " + markerName + " TrackName: " + TrackName);
+		if (markerName == TrackName + "_sing")
+		{
+			
+			if (!IsActive) return;
+			GD.Print("Matched");
+			sprite.Stop();
+			sprite.Play("active");
+			// toggleActive();
+		}
+	}
+	
+	private void OnActivaAnimationFinished()
+	{
+		sprite.Play("idle");
 	}
 }

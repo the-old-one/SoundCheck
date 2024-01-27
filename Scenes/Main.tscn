@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=23 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -9,11 +9,66 @@
 [ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
 [ext_resource type="Texture2D" uid="uid://c7tajfa2b12ob" path="res://Assets/Images/Spotlight.png" id="8_7it6c"]
+[ext_resource type="Texture2D" uid="uid://clx8xve3lh01v" path="res://Assets/Animations/bird_1/Bird_1-1.png" id="10_58m8j"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
+[ext_resource type="Texture2D" uid="uid://dkpwgv042010a" path="res://Assets/Animations/bird_1/Bird_1-2.png" id="11_nn2v0"]
+[ext_resource type="Texture2D" uid="uid://6il2505gffum" path="res://Assets/Animations/bird_1/Bird_1-3.png" id="12_o8dyv"]
+[ext_resource type="Texture2D" uid="uid://cixm68k2sx21u" path="res://Assets/Animations/bird_1/Bird_1-4.png" id="13_essq4"]
+[ext_resource type="Texture2D" uid="uid://dfi3lndai4y4x" path="res://Assets/Animations/bird_1/Bird_1-5.png" id="14_utqaq"]
+[ext_resource type="Texture2D" uid="uid://id1vwve8u681" path="res://Assets/Animations/bird_1/Bird_1-6.png" id="15_h425w"]
+[ext_resource type="Texture2D" uid="uid://d3poda41e7pgx" path="res://Assets/Animations/bird_1/Bird_1-7.png" id="16_6hh5y"]
+[ext_resource type="Texture2D" uid="uid://px6xwo4qpar8" path="res://Assets/Animations/bird_1/Bird_1-8.png" id="17_asbat"]
+[ext_resource type="Texture2D" uid="uid://cq2y46dsqhh82" path="res://Assets/Animations/bird_1/Bird_1-9.png" id="18_peyv4"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b6q8"]
 blend_mode = 1
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqwlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_58m8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nn2v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o8dyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_essq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_utqaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h425w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6hh5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_asbat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_peyv4")
+}],
+"loop": true,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_58m8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nn2v0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
 
 [node name="Main" type="Node2D"]
 
@@ -60,6 +115,13 @@ scale = Vector2(1.64, 1)
 texture = ExtResource("8_7it6c")
 
 [node name="Bird_1" parent="." instance=ExtResource("8_0iyqr")]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Bird_1"]
+position = Vector2(-3, -51)
+scale = Vector2(0.455, 0.455)
+sprite_frames = SubResource("SpriteFrames_gqwlf")
+animation = &"idle"
+frame_progress = 0.210634
 
 [node name="Bird_2" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(832, 284)

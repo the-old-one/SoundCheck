@@ -4,9 +4,15 @@
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="2_00gkk"]
 [ext_resource type="BusAsset" uid="uid://df5s2q6kfxpic" path="res://addons/FMOD/editor/resources/busses/{fd56833c-4fe9-4ac4-a6ce-d9089c118024}.tres" id="3_jq6wy"]
 [ext_resource type="BusAsset" uid="uid://do0hx12fa85xw" path="res://addons/FMOD/editor/resources/busses/{332c9e16-88fe-499b-9ad3-d4a15382af8d}.tres" id="4_ptv0b"]
-[ext_resource type="EventAsset" uid="uid://01nt3ky08iec" path="res://addons/FMOD/editor/resources/events/{9181bd78-0e38-4e58-b20b-bdcf5c607f05}.tres" id="5_lifov"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="6_q03h8"]
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="6_sak2u"]
+
+[sub_resource type="EventAsset" id="EventAsset_6kkx4"]
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/bird_1"
+guid = "{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}"
+name = "bird_1"
 
 [resource]
 banks = {
@@ -15,8 +21,8 @@ banks = {
 }
 events = {
 "{26a7f988-a3c5-4864-b9ad-db3c0601772a}": ExtResource("6_sak2u"),
-"{9181bd78-0e38-4e58-b20b-bdcf5c607f05}": ExtResource("5_lifov"),
-"{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8")
+"{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8"),
+"{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}": SubResource("EventAsset_6kkx4")
 }
 busses = {
 "{332c9e16-88fe-499b-9ad3-d4a15382af8d}": ExtResource("4_ptv0b"),
@@ -38,9 +44,9 @@ bank_tree = [{
 event_tree = [{
 "children": [],
 "item_type": 1,
-"node_name": "BGM",
-"path": "event:/BGM",
-"resource": ExtResource("5_lifov")
+"node_name": "bird_1",
+"path": "event:/bird_1",
+"resource": SubResource("EventAsset_6kkx4")
 }, {
 "children": [],
 "item_type": 1,

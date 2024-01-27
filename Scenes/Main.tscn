@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=86 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -6,15 +6,17 @@
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="3_bytus"]
 [ext_resource type="Script" path="res://Scenes/Button1_Sound.gd" id="3_p5htt"]
 [ext_resource type="EventAsset" uid="uid://x2ushrg8xvl1" path="res://addons/FMOD/editor/resources/events/{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}.tres" id="6_wblku"]
-[ext_resource type="Texture2D" uid="uid://y2x0achrtpgi" path="res://Assets/Images/Background.png" id="7_3ifmd"]
+[ext_resource type="Texture2D" uid="uid://lke27tw585cv" path="res://Assets/Images/Firefly.png" id="7_d8j3o"]
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
 [ext_resource type="Texture2D" uid="uid://c7tajfa2b12ob" path="res://Assets/Images/Spotlight.png" id="8_7it6c"]
 [ext_resource type="Texture2D" uid="uid://clx8xve3lh01v" path="res://Assets/Animations/bird_1/Bird_1-1.png" id="10_58m8j"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
 [ext_resource type="Texture2D" uid="uid://dkpwgv042010a" path="res://Assets/Animations/bird_1/Bird_1-2.png" id="11_nn2v0"]
+[ext_resource type="Texture2D" uid="uid://dp08gxn2fbi2x" path="res://Assets/Images/Rope.png" id="11_oq8ri"]
 [ext_resource type="Texture2D" uid="uid://6il2505gffum" path="res://Assets/Animations/bird_1/Bird_1-3.png" id="12_o8dyv"]
 [ext_resource type="Texture2D" uid="uid://cixm68k2sx21u" path="res://Assets/Animations/bird_1/Bird_1-4.png" id="13_essq4"]
+[ext_resource type="Texture2D" uid="uid://bt86jkgw4oqrg" path="res://Assets/Images/Drums.png" id="13_lamw7"]
 [ext_resource type="Texture2D" uid="uid://dfi3lndai4y4x" path="res://Assets/Animations/bird_1/Bird_1-5.png" id="14_utqaq"]
 [ext_resource type="Texture2D" uid="uid://id1vwve8u681" path="res://Assets/Animations/bird_1/Bird_1-6.png" id="15_h425w"]
 [ext_resource type="Texture2D" uid="uid://d3poda41e7pgx" path="res://Assets/Animations/bird_1/Bird_1-7.png" id="16_6hh5y"]
@@ -48,6 +50,56 @@
 [ext_resource type="Texture2D" uid="uid://c0ed24r3qumj7" path="res://Assets/Animations/bird_3/Bird_3-11.png" id="37_0cjcu"]
 [ext_resource type="Texture2D" uid="uid://dagd4mhnj3ef3" path="res://Assets/Animations/bird_bass/Bird_bass-9.png" id="37_ygwis"]
 [ext_resource type="Texture2D" uid="uid://cjijgabwu3uu0" path="res://Assets/Animations/bird_3/Bird_3-12.png" id="38_dlehe"]
+[ext_resource type="Texture2D" uid="uid://b4rellul3p88c" path="res://Assets/Animations/caterpillar/Caterpillar-1.png" id="47_i26kq"]
+[ext_resource type="Texture2D" uid="uid://dksj7byb2qacp" path="res://Assets/Animations/caterpillar/Caterpillar-2.png" id="48_e40ad"]
+[ext_resource type="Texture2D" uid="uid://ckse4q8qi1lag" path="res://Assets/Animations/caterpillar/Caterpillar-3.png" id="49_nc2wh"]
+[ext_resource type="Texture2D" uid="uid://e3dmqlceqy8y" path="res://Assets/Animations/caterpillar/Caterpillar-4.png" id="50_og0y3"]
+[ext_resource type="Texture2D" uid="uid://bs1faylrdit8k" path="res://Assets/Animations/caterpillar/Caterpillar-5.png" id="51_ow8r3"]
+[ext_resource type="Texture2D" uid="uid://c7ry7jph32w6q" path="res://Assets/Animations/caterpillar/Caterpillar-6.png" id="52_368no"]
+[ext_resource type="Texture2D" uid="uid://ca53w3xj1pgbo" path="res://Assets/Animations/caterpillar/Caterpillar-7.png" id="53_vffaq"]
+[ext_resource type="Texture2D" uid="uid://b3m3gxmxuq81y" path="res://Assets/Animations/caterpillar/Caterpillar-8.png" id="54_01rug"]
+[ext_resource type="Texture2D" uid="uid://c6lviimsp1bxm" path="res://Assets/Images/Mushrooms.png" id="57_81bcd"]
+[ext_resource type="Texture2D" uid="uid://wgb3k842r27f" path="res://Assets/Images/Tree.png" id="57_t8jv7"]
+[ext_resource type="Texture2D" uid="uid://bqmyx0rhtdetm" path="res://Assets/Images/Grass.png" id="58_yfamr"]
+[ext_resource type="Texture2D" uid="uid://bdu7ln75mmchl" path="res://Assets/Images/Bush_1.png" id="60_d04rv"]
+[ext_resource type="Texture2D" uid="uid://degwjd6u1utn4" path="res://Assets/Animations/frog_1/Frog_1-1.png" id="61_unmqf"]
+[ext_resource type="Texture2D" uid="uid://bib06g1mg1sdb" path="res://Assets/Animations/frog_1/Frog_1-2.png" id="62_usj0c"]
+[ext_resource type="Texture2D" uid="uid://spfs4cw0uf3f" path="res://Assets/Animations/hamster/Hamster_drum-1.png" id="62_xodam"]
+[ext_resource type="Texture2D" uid="uid://b4hwc7btcgibe" path="res://Assets/Animations/frog_1/Frog_1-3.png" id="63_5wphc"]
+[ext_resource type="Texture2D" uid="uid://dbuhko27xru66" path="res://Assets/Animations/hamster/Hamster_drum-2.png" id="63_hf6c6"]
+[ext_resource type="Texture2D" uid="uid://873y5li4aa6e" path="res://Assets/Animations/hamster/Hamster_drum-3.png" id="64_nsr5m"]
+[ext_resource type="Texture2D" uid="uid://d0ag6f4fkxfm" path="res://Assets/Animations/frog_1/Frog_1-4.png" id="64_osewk"]
+[ext_resource type="Texture2D" uid="uid://3ofq3irbh80o" path="res://Assets/Animations/frog_1/Frog_1-5.png" id="65_k1ruw"]
+[ext_resource type="Texture2D" uid="uid://b8alm4dnq56u5" path="res://Assets/Animations/frog_1/Frog_1-6.png" id="66_1bhr3"]
+[ext_resource type="Texture2D" uid="uid://b86y8t5qwtgel" path="res://Assets/Animations/frog_1/Frog_1-7.png" id="67_4icnr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mahek"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(960, 540, 1)
+spread = 180.0
+initial_velocity_min = -4.0
+initial_velocity_max = 4.0
+gravity = Vector3(0, 98, 0)
+scale_min = 0.4
+scale_max = 0.9
+turbulence_enabled = true
+turbulence_noise_strength = 20.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_utkmn"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(960, 540, 1)
+spread = 180.0
+initial_velocity_min = -4.0
+initial_velocity_max = 4.0
+gravity = Vector3(2.08165e-12, 2.08165e-12, 2.08165e-12)
+linear_accel_max = 36.67
+scale_min = 0.7
+scale_max = 1.2
+turbulence_enabled = true
+turbulence_noise_strength = 20.0
+turbulence_noise_speed = Vector3(10, 1, 2.08165e-12)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b6q8"]
 blend_mode = 1
@@ -221,6 +273,189 @@ animations = [{
 "speed": 2.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_etfcp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_i26kq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_e40ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_nc2wh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_og0y3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ow8r3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_368no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_vffaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_01rug")
+}],
+"loop": false,
+"name": &"active",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_i26kq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3aj6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}, {
+"duration": 2.0,
+"texture": ExtResource("63_5wphc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_k1ruw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_1bhr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4icnr")
+}],
+"loop": false,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bdrey"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_5wphc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_osewk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_k1ruw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_1bhr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4icnr")
+}],
+"loop": false,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf1yk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_5wphc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_osewk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_k1ruw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_1bhr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4icnr")
+}],
+"loop": false,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_usj0c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tj7xw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_xodam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_hf6c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_nsr5m")
+}],
+"loop": false,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_xodam")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3npxs"]
+radius = 101.0
+height = 318.0
+
 [node name="Main" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -254,10 +489,94 @@ play_event = 1
 stop_event = 3
 event = ExtResource("6_wblku")
 
-[node name="Background" type="Sprite2D" parent="."]
-modulate = Color(0.25, 0.5, 0.5, 1)
-position = Vector2(960, 540)
-texture = ExtResource("7_3ifmd")
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+modulate = Color(0.0431373, 0.964706, 0.827451, 1)
+position = Vector2(955, 542)
+amount = 50
+process_material = SubResource("ParticleProcessMaterial_mahek")
+texture = ExtResource("7_d8j3o")
+lifetime = 10.0
+preprocess = 1.0
+speed_scale = 0.26
+randomness = 0.26
+visibility_rect = Rect2(-960, -540, 1920, 1080)
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+modulate = Color(1, 1, 0.584314, 1)
+z_index = 2
+position = Vector2(955, 542)
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_utkmn")
+texture = ExtResource("7_d8j3o")
+lifetime = 10.0
+preprocess = 1.0
+speed_scale = 0.26
+randomness = 0.26
+visibility_rect = Rect2(-960, -540, 1920, 1080)
+
+[node name="BG" type="Node2D" parent="."]
+modulate = Color(0.25098, 0.501961, 0.501961, 1)
+
+[node name="ColorRect" type="ColorRect" parent="BG"]
+z_index = -1
+custom_minimum_size = Vector2(1920, 1080)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 3.0
+offset_right = 1918.0
+offset_bottom = 1083.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.447059, 0.439216, 0.517647, 1)
+
+[node name="Tree" type="Sprite2D" parent="BG"]
+position = Vector2(960, 541)
+texture = ExtResource("57_t8jv7")
+
+[node name="Grass2" type="Sprite2D" parent="BG"]
+position = Vector2(410, 1005)
+texture = ExtResource("58_yfamr")
+
+[node name="Grass" type="Sprite2D" parent="BG"]
+position = Vector2(194, 1005)
+texture = ExtResource("58_yfamr")
+
+[node name="Mushrooms2" type="Sprite2D" parent="BG"]
+position = Vector2(607, 879)
+rotation = 0.301949
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("57_81bcd")
+
+[node name="Mushrooms" type="Sprite2D" parent="BG"]
+z_index = 1
+position = Vector2(603, 937)
+texture = ExtResource("57_81bcd")
+
+[node name="Grass3" type="Sprite2D" parent="BG"]
+z_index = 1
+position = Vector2(608, 1005)
+texture = ExtResource("58_yfamr")
+
+[node name="Bush2" type="Sprite2D" parent="BG"]
+position = Vector2(1942, 978)
+scale = Vector2(0.84, 1.08)
+texture = ExtResource("60_d04rv")
+
+[node name="Bush1" type="Sprite2D" parent="BG"]
+position = Vector2(1427, 990)
+texture = ExtResource("60_d04rv")
+
+[node name="Rope" type="Sprite2D" parent="BG"]
+z_index = 1
+position = Vector2(972, 310)
+texture = ExtResource("11_oq8ri")
+
+[node name="Drums" type="Sprite2D" parent="BG"]
+position = Vector2(1510, 874)
+texture = ExtResource("13_lamw7")
 
 [node name="Spotlight" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -267,6 +586,7 @@ scale = Vector2(1.64, 1)
 texture = ExtResource("8_7it6c")
 
 [node name="Bird_1" parent="." instance=ExtResource("8_0iyqr")]
+z_index = 1
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_1"]
 position = Vector2(-4.00003, 59)
@@ -280,14 +600,14 @@ position = Vector2(889, 284)
 TrackName = "bird_2"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_2"]
-position = Vector2(1.99998, 55)
+position = Vector2(2.99998, 63)
 scale = Vector2(0.375, 0.375)
 sprite_frames = SubResource("SpriteFrames_csuia")
 animation = &"idle"
 offset = Vector2(5.33325, -189.333)
 
 [node name="Bird_3" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1162, 280)
+position = Vector2(1159, 293)
 TrackName = "bird_3"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_3"]
@@ -300,7 +620,8 @@ frame_progress = 0.0616101
 offset = Vector2(20.8335, -341.67)
 
 [node name="Bird_bass" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1501, 190)
+z_index = 1
+position = Vector2(1440, 232)
 TrackName = "bird_bass"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_bass"]
@@ -313,37 +634,80 @@ frame = 6
 frame_progress = 1.0
 offset = Vector2(-43.7957, -277.372)
 
-[node name="Bug_synth" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1228, 546)
+[node name="Caterpillar" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1252, 555)
 TrackName = "caterpillar"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Caterpillar"]
+position = Vector2(25, 1.52588e-05)
+rotation = -0.291884
+scale = Vector2(0.3875, 0.3825)
+sprite_frames = SubResource("SpriteFrames_etfcp")
+animation = &"active"
 
 [node name="Rattlesnake" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(1596, 446)
 TrackName = "rattlesnake"
 
-[node name="Frog_1" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1596, 728)
-TrackName = "frog_1"
-
-[node name="Frog_2" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1338, 785)
-TrackName = "frog_2"
-
 [node name="Frog_3" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1559, 901)
+position = Vector2(1596, 730)
 TrackName = "frog_3"
 
+[node name="Sprite" type="AnimatedSprite2D" parent="Frog_3"]
+position = Vector2(1.00004, 49)
+scale = Vector2(0.303734, 0.252743)
+sprite_frames = SubResource("SpriteFrames_3aj6y")
+animation = &"active"
+offset = Vector2(-5.19482, -358.442)
+
+[node name="Frog_2" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1337, 790)
+TrackName = "frog_2"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Frog_2"]
+position = Vector2(0.999979, 37)
+scale = Vector2(0.2375, 0.2375)
+sprite_frames = SubResource("SpriteFrames_bdrey")
+animation = &"active"
+offset = Vector2(-5.19482, -358.442)
+
+[node name="Frog_1" parent="." instance=ExtResource("8_0iyqr")]
+position = Vector2(1561, 895)
+TrackName = "frog_1"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Frog_1"]
+position = Vector2(-1.00002, 42)
+scale = Vector2(0.1925, 0.1925)
+sprite_frames = SubResource("SpriteFrames_lf1yk")
+animation = &"active"
+frame = 6
+frame_progress = 1.0
+offset = Vector2(-5.19482, -358.442)
+
 [node name="Bug_accordion" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(904, 580)
+position = Vector2(865, 864)
 TrackName = "bug_accordion"
 
 [node name="Rabbit_trumpet" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(470, 699)
+position = Vector2(242, 663)
 TrackName = "rabbit_trumpet"
 
 [node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(874, 844)
+position = Vector2(631, 610)
 TrackName = "gerbil_kickdrum"
+
+[node name="CollisionShape2D" parent="Gerbil_kickdrum" index="0"]
+disabled = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Gerbil_kickdrum"]
+position = Vector2(-5.99997, 190)
+scale = Vector2(0.55, 0.55)
+sprite_frames = SubResource("SpriteFrames_tj7xw")
+animation = &"idle"
+offset = Vector2(18.1818, -360)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Gerbil_kickdrum"]
+shape = SubResource("CapsuleShape2D_3npxs")
 
 [node name="Spider_strings" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(278, 69)
@@ -358,12 +722,14 @@ event = ExtResource("11_mynk3")
 [connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_bass" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Bug_synth" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Caterpillar" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Rattlesnake" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Frog_1" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Frog_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Frog_3" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_2" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Frog_1" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bug_accordion" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Rabbit_trumpet" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Gerbil_kickdrum" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Spider_strings" to="FMODController" method="_on_track_toggle"]
+
+[editable path="Gerbil_kickdrum"]

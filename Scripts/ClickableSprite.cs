@@ -79,12 +79,9 @@ public partial class ClickableSprite : Area2D
 		// GD.Print("markerName: " + markerName + " TrackName: " + TrackName);
 		if (markerName == TrackName + "_sing")
 		{
-			
 			if (!IsActive) return;
-			GD.Print("Matched");
 			sprite.Stop();
 			sprite.Play("active");
-			// toggleActive();
 		}
 	}
 	

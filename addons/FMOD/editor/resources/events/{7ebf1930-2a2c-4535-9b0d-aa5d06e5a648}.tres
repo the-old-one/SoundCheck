@@ -1,0 +1,8 @@
+[gd_resource type="EventAsset" format=3 uid="uid://x2ushrg8xvl1"]
+
+[resource]
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/MUSIC_BGM"
+guid = "{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}"
+name = "MUSIC_BGM"

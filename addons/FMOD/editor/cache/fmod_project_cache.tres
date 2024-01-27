@@ -1,18 +1,13 @@
-[gd_resource type="ProjectCache" load_steps=8 format=3 uid="uid://cbmw14xjljjf8"]
+[gd_resource type="ProjectCache" load_steps=9 format=3 uid="uid://cbmw14xjljjf8"]
 
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="1_cxr46"]
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="2_00gkk"]
 [ext_resource type="BusAsset" uid="uid://df5s2q6kfxpic" path="res://addons/FMOD/editor/resources/busses/{fd56833c-4fe9-4ac4-a6ce-d9089c118024}.tres" id="3_jq6wy"]
 [ext_resource type="BusAsset" uid="uid://do0hx12fa85xw" path="res://addons/FMOD/editor/resources/busses/{332c9e16-88fe-499b-9ad3-d4a15382af8d}.tres" id="4_ptv0b"]
+[ext_resource type="EventAsset" uid="uid://cil2pnhn4bixt" path="res://addons/FMOD/editor/resources/events/{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}.tres" id="5_tois7"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="6_q03h8"]
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="6_sak2u"]
-
-[sub_resource type="EventAsset" id="EventAsset_6kkx4"]
-min_distance = 1.0
-max_distance = 20.0
-path = "event:/bird_1"
-guid = "{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}"
-name = "bird_1"
+[ext_resource type="EventAsset" uid="uid://x2ushrg8xvl1" path="res://addons/FMOD/editor/resources/events/{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}.tres" id="7_8uahe"]
 
 [resource]
 banks = {
@@ -21,8 +16,9 @@ banks = {
 }
 events = {
 "{26a7f988-a3c5-4864-b9ad-db3c0601772a}": ExtResource("6_sak2u"),
+"{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}": ExtResource("7_8uahe"),
 "{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8"),
-"{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}": SubResource("EventAsset_6kkx4")
+"{cdd1d8fa-d676-47fe-8cf2-1dda12cef1ac}": ExtResource("5_tois7")
 }
 busses = {
 "{332c9e16-88fe-499b-9ad3-d4a15382af8d}": ExtResource("4_ptv0b"),
@@ -46,13 +42,19 @@ event_tree = [{
 "item_type": 1,
 "node_name": "bird_1",
 "path": "event:/bird_1",
-"resource": SubResource("EventAsset_6kkx4")
+"resource": ExtResource("5_tois7")
 }, {
 "children": [],
 "item_type": 1,
 "node_name": "MUSIC_Animal_Orchestra",
 "path": "event:/MUSIC_Animal_Orchestra",
 "resource": ExtResource("6_q03h8")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "MUSIC_BGM",
+"path": "event:/MUSIC_BGM",
+"resource": ExtResource("7_8uahe")
 }, {
 "children": [],
 "item_type": 1,

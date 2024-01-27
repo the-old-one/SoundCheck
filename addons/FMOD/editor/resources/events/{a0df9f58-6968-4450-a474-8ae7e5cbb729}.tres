@@ -1,275 +1,256 @@
-[gd_resource type="EventAsset" load_steps=43 format=3 uid="uid://dlm8jaov7mi0g"]
+[gd_resource type="EventAsset" load_steps=40 format=3 uid="uid://dlm8jaov7mi0g"]
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_e3e3r"]
-data1 = 1986590898
-data2 = 2127785424
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_bg37j"]
-name = "rattlesnake"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_e3e3r")
-maximum = 1.0
-flags = 24
-guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_olbcm"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_bg37j")
-labels = ["Off", "On"]
-path = "parameter:/rattlesnake"
-guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
-name = "rattlesnake"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_gofbn"]
-data1 = 2489699176
-data2 = 480656516
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_dvhtd"]
-name = "bird_3"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_gofbn")
-maximum = 1.0
-flags = 24
-guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_ald4u"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_dvhtd")
-labels = ["Off", "On"]
-path = "parameter:/bird_3"
-guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
-name = "bird_3"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_qptgb"]
-data1 = 1610407862
-data2 = 4083778928
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_lctja"]
-name = "spider"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_qptgb")
-maximum = 1.0
-flags = 24
-guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_kis64"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_lctja")
-labels = ["Off", "On"]
-path = "parameter:/spider"
-guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
-name = "spider"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_ko186"]
-data1 = 1215891596
-data2 = 1247145853
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_ous3m"]
-name = "bird_bass"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_ko186")
-maximum = 1.0
-flags = 24
-guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_u47as"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_ous3m")
-labels = ["Off", "On"]
-path = "parameter:/bird_bass"
-guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
-name = "bird_bass"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_yco4r"]
-data1 = 411660529
-data2 = 1023001101
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_xmk7r"]
-name = "frog_3"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_yco4r")
-maximum = 1.0
-flags = 24
-guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_bl8t5"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_xmk7r")
-labels = ["Off", "On"]
-path = "parameter:/frog_3"
-guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
-name = "frog_3"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_mnewi"]
-data1 = 3009183414
-data2 = 1153119927
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_rx34s"]
-name = "rabbit_trombone"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_mnewi")
-maximum = 1.0
-flags = 24
-guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_thh3s"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_rx34s")
-labels = ["Off", "On"]
-path = "parameter:/rabbit_trombone"
-guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
-name = "rabbit_trombone"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_0q3ho"]
-data1 = 2313067666
-data2 = 2703357443
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_bn3a4"]
-name = "gerbil_kickdrum"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_0q3ho")
-maximum = 1.0
-flags = 24
-guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_km5do"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_bn3a4")
-labels = ["Off", "On"]
-path = "parameter:/gerbil_kickdrum"
-guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
-name = "gerbil_kickdrum"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_yapmu"]
-data1 = 1105894627
-data2 = 1131734255
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_lemjj"]
-name = "frog_1"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_yapmu")
-maximum = 1.0
-flags = 24
-guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_ff7xu"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_lemjj")
-labels = ["Off", "On"]
-path = "parameter:/frog_1"
-guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
-name = "frog_1"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_d4ffn"]
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_vobkq"]
 data1 = 2819913704
 data2 = 1118274002
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_mge27"]
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_dr2oy"]
 name = "bird_2"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_d4ffn")
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_vobkq")
 maximum = 1.0
 flags = 24
 guid = "{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}"
 
-[sub_resource type="ParameterAsset" id="ParameterAsset_0cn60"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_mge27")
+[sub_resource type="ParameterAsset" id="ParameterAsset_d5hop"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_dr2oy")
 labels = ["Off", "On"]
 path = "parameter:/bird_2"
 guid = "{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}"
 name = "bird_2"
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_j52yr"]
-data1 = 1914119733
-data2 = 4101635463
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_8wgo1"]
+data1 = 411660529
+data2 = 1023001101
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_0ge5j"]
-name = "bird_1"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_j52yr")
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_jgeps"]
+name = "frog_3"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_8wgo1")
 maximum = 1.0
 flags = 24
-guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
+guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
 
-[sub_resource type="ParameterAsset" id="ParameterAsset_wv3sq"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_0ge5j")
+[sub_resource type="ParameterAsset" id="ParameterAsset_3wfma"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_jgeps")
 labels = ["Off", "On"]
-path = "parameter:/bird_1"
-guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
-name = "bird_1"
+path = "parameter:/frog_3"
+guid = "{46e9615a-e3ed-4171-be88-17f3e4a6b190}"
+name = "frog_3"
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_l13oi"]
-data1 = 1765592383
-data2 = 3332573152
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_14fn3"]
+data1 = 2313067666
+data2 = 2703357443
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_1wwqc"]
-name = "caterpillar"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_l13oi")
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_0qol7"]
+name = "gerbil_kickdrum"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_14fn3")
 maximum = 1.0
 flags = 24
-guid = "{c6ee54a5-0d6e-43d2-9d92-12cac282d407}"
+guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
 
-[sub_resource type="ParameterAsset" id="ParameterAsset_4uq2f"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_1wwqc")
+[sub_resource type="ParameterAsset" id="ParameterAsset_jomhy"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_0qol7")
 labels = ["Off", "On"]
-path = "parameter:/caterpillar"
-guid = "{c6ee54a5-0d6e-43d2-9d92-12cac282d407}"
-name = "caterpillar"
+path = "parameter:/gerbil_kickdrum"
+guid = "{7da55944-5f64-4c83-afd8-4a4751b8a33c}"
+name = "gerbil_kickdrum"
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_c4tar"]
-data1 = 2916774501
-data2 = 3520813379
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_b57i0"]
-name = "bug_accordion"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_c4tar")
-maximum = 1.0
-flags = 24
-guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_xq0o8"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_b57i0")
-labels = ["Off", "On"]
-path = "parameter:/bug_accordion"
-guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
-name = "bug_accordion"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_7lvye"]
-data1 = 417272328
-data2 = 3263408743
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_bi1s6"]
-name = "bug_synth"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_7lvye")
-maximum = 1.0
-flags = 24
-guid = "{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_iowlb"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_bi1s6")
-labels = ["Off", "On"]
-path = "parameter:/bug_synth"
-guid = "{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}"
-name = "bug_synth"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_i1bj6"]
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_q5me6"]
 data1 = 116888673
 data2 = 3173459883
 
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_qk5gk"]
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_v28mq"]
 name = "frog_2"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_i1bj6")
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_q5me6")
 maximum = 1.0
 flags = 24
 guid = "{f895056b-2527-4b09-be7c-d37d7133c750}"
 
-[sub_resource type="ParameterAsset" id="ParameterAsset_u5lvg"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_qk5gk")
+[sub_resource type="ParameterAsset" id="ParameterAsset_sm4ed"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_v28mq")
 labels = ["Off", "On"]
 path = "parameter:/frog_2"
 guid = "{f895056b-2527-4b09-be7c-d37d7133c750}"
 name = "frog_2"
 
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_pqfrf"]
+data1 = 3009183414
+data2 = 1153119927
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_w2c2u"]
+name = "rabbit_trombone"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_pqfrf")
+maximum = 1.0
+flags = 24
+guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_r6m6f"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_w2c2u")
+labels = ["Off", "On"]
+path = "parameter:/rabbit_trombone"
+guid = "{4e8dd100-d095-4b5f-9412-6449825a5619}"
+name = "rabbit_trombone"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_qw118"]
+data1 = 1215891596
+data2 = 1247145853
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_fjhqv"]
+name = "bird_bass"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_qw118")
+maximum = 1.0
+flags = 24
+guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_gmi1c"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_fjhqv")
+labels = ["Off", "On"]
+path = "parameter:/bird_bass"
+guid = "{37e83e3f-5064-4613-baf6-6733f6d17ce0}"
+name = "bird_bass"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_fp4dv"]
+data1 = 1105894627
+data2 = 1131734255
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_2kjuf"]
+name = "frog_1"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_fp4dv")
+maximum = 1.0
+flags = 24
+guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_ew0qd"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_2kjuf")
+labels = ["Off", "On"]
+path = "parameter:/frog_1"
+guid = "{84bedee8-b760-4a24-9b22-b1b51a10f02b}"
+name = "frog_1"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_ue62u"]
+data1 = 2489699176
+data2 = 480656516
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_r22pk"]
+name = "bird_3"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_ue62u")
+maximum = 1.0
+flags = 24
+guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_2jrbf"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_r22pk")
+labels = ["Off", "On"]
+path = "parameter:/bird_3"
+guid = "{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}"
+name = "bird_3"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_qlcwp"]
+data1 = 1610407862
+data2 = 4083778928
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_dk6yr"]
+name = "spider"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_qlcwp")
+maximum = 1.0
+flags = 24
+guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_wbvgc"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_dk6yr")
+labels = ["Off", "On"]
+path = "parameter:/spider"
+guid = "{2fca4fbc-09ed-443d-8651-b31c5ab108db}"
+name = "spider"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_7tgyo"]
+data1 = 1914119733
+data2 = 4101635463
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_imygu"]
+name = "bird_1"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_7tgyo")
+maximum = 1.0
+flags = 24
+guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_0kd74"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_imygu")
+labels = ["Off", "On"]
+path = "parameter:/bird_1"
+guid = "{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}"
+name = "bird_1"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_onkng"]
+data1 = 2916774501
+data2 = 3520813379
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_457ky"]
+name = "bug_accordion"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_onkng")
+maximum = 1.0
+flags = 24
+guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_smqsp"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_457ky")
+labels = ["Off", "On"]
+path = "parameter:/bug_accordion"
+guid = "{cadcd4b6-ed2b-4064-8341-02afeab2b20e}"
+name = "bug_accordion"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_fck3w"]
+data1 = 1986590898
+data2 = 2127785424
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_anay7"]
+name = "rattlesnake"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_fck3w")
+maximum = 1.0
+flags = 24
+guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_c050p"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_anay7")
+labels = ["Off", "On"]
+path = "parameter:/rattlesnake"
+guid = "{0d8c3daf-bff4-4ee8-82bc-dfef98027417}"
+name = "rattlesnake"
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_hj6lu"]
+data1 = 1765592383
+data2 = 3332573152
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_moofy"]
+name = "caterpillar"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_hj6lu")
+maximum = 1.0
+flags = 24
+guid = "{c6ee54a5-0d6e-43d2-9d92-12cac282d407}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_5arjs"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_moofy")
+labels = ["Off", "On"]
+path = "parameter:/caterpillar"
+guid = "{c6ee54a5-0d6e-43d2-9d92-12cac282d407}"
+name = "caterpillar"
+
 [resource]
 min_distance = 1.0
 max_distance = 20.0
 parameters = {
-"{0d8c3daf-bff4-4ee8-82bc-dfef98027417}": SubResource("ParameterAsset_olbcm"),
-"{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}": SubResource("ParameterAsset_ald4u"),
-"{2fca4fbc-09ed-443d-8651-b31c5ab108db}": SubResource("ParameterAsset_kis64"),
-"{37e83e3f-5064-4613-baf6-6733f6d17ce0}": SubResource("ParameterAsset_u47as"),
-"{46e9615a-e3ed-4171-be88-17f3e4a6b190}": SubResource("ParameterAsset_bl8t5"),
-"{4e8dd100-d095-4b5f-9412-6449825a5619}": SubResource("ParameterAsset_thh3s"),
-"{7da55944-5f64-4c83-afd8-4a4751b8a33c}": SubResource("ParameterAsset_km5do"),
-"{84bedee8-b760-4a24-9b22-b1b51a10f02b}": SubResource("ParameterAsset_ff7xu"),
-"{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}": SubResource("ParameterAsset_0cn60"),
-"{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}": SubResource("ParameterAsset_wv3sq"),
-"{c6ee54a5-0d6e-43d2-9d92-12cac282d407}": SubResource("ParameterAsset_4uq2f"),
-"{cadcd4b6-ed2b-4064-8341-02afeab2b20e}": SubResource("ParameterAsset_xq0o8"),
-"{d3fcbcb9-ed4e-4ab3-8a41-48f66851d669}": SubResource("ParameterAsset_iowlb"),
-"{f895056b-2527-4b09-be7c-d37d7133c750}": SubResource("ParameterAsset_u5lvg")
+"{0d8c3daf-bff4-4ee8-82bc-dfef98027417}": SubResource("ParameterAsset_c050p"),
+"{1afa9f8a-c8a2-4cb3-bdc0-4b1b54296c85}": SubResource("ParameterAsset_2jrbf"),
+"{2fca4fbc-09ed-443d-8651-b31c5ab108db}": SubResource("ParameterAsset_wbvgc"),
+"{37e83e3f-5064-4613-baf6-6733f6d17ce0}": SubResource("ParameterAsset_gmi1c"),
+"{46e9615a-e3ed-4171-be88-17f3e4a6b190}": SubResource("ParameterAsset_3wfma"),
+"{4e8dd100-d095-4b5f-9412-6449825a5619}": SubResource("ParameterAsset_r6m6f"),
+"{7da55944-5f64-4c83-afd8-4a4751b8a33c}": SubResource("ParameterAsset_jomhy"),
+"{84bedee8-b760-4a24-9b22-b1b51a10f02b}": SubResource("ParameterAsset_ew0qd"),
+"{9e46ca59-56dc-4bd7-b5fb-6b23fad01bcc}": SubResource("ParameterAsset_d5hop"),
+"{c28880bf-5f21-4765-8ef3-2c78ce3e4ff1}": SubResource("ParameterAsset_0kd74"),
+"{c6ee54a5-0d6e-43d2-9d92-12cac282d407}": SubResource("ParameterAsset_5arjs"),
+"{cadcd4b6-ed2b-4064-8341-02afeab2b20e}": SubResource("ParameterAsset_smqsp"),
+"{f895056b-2527-4b09-be7c-d37d7133c750}": SubResource("ParameterAsset_sm4ed")
 }
 path = "event:/MUSIC_Animal_Orchestra"
 guid = "{a0df9f58-6968-4450-a474-8ae7e5cbb729}"

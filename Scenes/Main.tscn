@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=136 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
@@ -65,11 +65,14 @@
 [ext_resource type="Texture2D" uid="uid://bdu7ln75mmchl" path="res://Assets/Images/Bush_1.png" id="60_d04rv"]
 [ext_resource type="Texture2D" uid="uid://degwjd6u1utn4" path="res://Assets/Animations/frog_1/Frog_1-1.png" id="61_unmqf"]
 [ext_resource type="Texture2D" uid="uid://bib06g1mg1sdb" path="res://Assets/Animations/frog_1/Frog_1-2.png" id="62_usj0c"]
+[ext_resource type="Texture2D" uid="uid://ba16onhkwkd2b" path="res://Assets/Animations/rattlesnake/Snake-1.png" id="62_x5cjq"]
 [ext_resource type="Texture2D" uid="uid://spfs4cw0uf3f" path="res://Assets/Animations/hamster/Hamster_drum-1.png" id="62_xodam"]
 [ext_resource type="Texture2D" uid="uid://b4hwc7btcgibe" path="res://Assets/Animations/frog_1/Frog_1-3.png" id="63_5wphc"]
+[ext_resource type="Texture2D" uid="uid://oppxnnqdk3iq" path="res://Assets/Animations/rattlesnake/Snake-2.png" id="63_fmc3e"]
 [ext_resource type="Texture2D" uid="uid://dbuhko27xru66" path="res://Assets/Animations/hamster/Hamster_drum-2.png" id="63_hf6c6"]
 [ext_resource type="Texture2D" uid="uid://873y5li4aa6e" path="res://Assets/Animations/hamster/Hamster_drum-3.png" id="64_nsr5m"]
 [ext_resource type="Texture2D" uid="uid://d0ag6f4fkxfm" path="res://Assets/Animations/frog_1/Frog_1-4.png" id="64_osewk"]
+[ext_resource type="Texture2D" uid="uid://dv5quq28fhbw6" path="res://Assets/Animations/rattlesnake/Snake-3.png" id="64_pebt4"]
 [ext_resource type="Texture2D" uid="uid://3ofq3irbh80o" path="res://Assets/Animations/frog_1/Frog_1-5.png" id="65_k1ruw"]
 [ext_resource type="Texture2D" uid="uid://b8alm4dnq56u5" path="res://Assets/Animations/frog_1/Frog_1-6.png" id="66_1bhr3"]
 [ext_resource type="Texture2D" uid="uid://b86y8t5qwtgel" path="res://Assets/Animations/frog_1/Frog_1-7.png" id="67_4icnr"]
@@ -78,7 +81,9 @@
 [ext_resource type="Texture2D" uid="uid://bucs210q22ncn" path="res://Assets/Animations/accordion/Accordion-3.png" id="71_80h7d"]
 [ext_resource type="Texture2D" uid="uid://bxiyyet05y3r4" path="res://Assets/Animations/spider/Spider-1.png" id="71_gqsuq"]
 [ext_resource type="Texture2D" uid="uid://yay36yr7csbw" path="res://Assets/Animations/spider/Spider-2.png" id="72_lgj0s"]
+[ext_resource type="Texture2D" uid="uid://cv3a8u81b71vh" path="res://Assets/Animations/frog_1/Frog_blinking-2.png" id="72_mj11e"]
 [ext_resource type="Texture2D" uid="uid://dil7cqph72en1" path="res://Assets/Animations/accordion/Accordion-4.png" id="72_quh6i"]
+[ext_resource type="Texture2D" uid="uid://cb36tao4n7vcx" path="res://Assets/Animations/frog_1/Frog_blinking-3.png" id="73_0q52s"]
 [ext_resource type="Texture2D" uid="uid://cl42a3jrhehbo" path="res://Assets/Animations/accordion/Accordion-5.png" id="73_ispqa"]
 [ext_resource type="Texture2D" uid="uid://b76uvoxf7nwtr" path="res://Assets/Animations/spider/Spider-3.png" id="73_mp576"]
 [ext_resource type="Texture2D" uid="uid://y1xfts353mbe" path="res://Assets/Animations/spider/Spider-4.png" id="74_h1ug1"]
@@ -378,6 +383,35 @@ animations = [{
 radius = 67.3508
 height = 241.967
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_quvs5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_x5cjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fmc3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_pebt4")
+}],
+"loop": false,
+"name": &"active",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("63_fmc3e")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mxy3n"]
+radius = 95.7372
+height = 382.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_3aj6y"]
 animations = [{
 "frames": [{
@@ -401,8 +435,11 @@ animations = [{
 "speed": 15.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 10.0,
 "texture": ExtResource("61_unmqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_0q52s")
 }, {
 "duration": 1.0,
 "texture": ExtResource("62_usj0c")
@@ -435,11 +472,17 @@ animations = [{
 "speed": 15.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("61_unmqf")
+"duration": 7.0,
+"texture": ExtResource("72_mj11e")
 }, {
 "duration": 1.0,
 "texture": ExtResource("62_usj0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_0q52s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_unmqf")
 }],
 "loop": true,
 "name": &"idle",
@@ -469,8 +512,11 @@ animations = [{
 "speed": 15.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": ExtResource("61_unmqf")
+}, {
+"duration": 2.0,
+"texture": ExtResource("72_mj11e")
 }, {
 "duration": 1.0,
 "texture": ExtResource("62_usj0c")
@@ -861,8 +907,23 @@ rotation = 0.698132
 shape = SubResource("CapsuleShape2D_led4v")
 
 [node name="Rattlesnake" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1596, 446)
+position = Vector2(1639, 379)
 TrackName = "rattlesnake"
+
+[node name="CollisionShape2D" parent="Rattlesnake" index="0"]
+disabled = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Rattlesnake"]
+position = Vector2(42.3269, -94.834)
+rotation = -0.291884
+scale = Vector2(0.615573, 0.60763)
+sprite_frames = SubResource("SpriteFrames_quvs5")
+animation = &"idle"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Rattlesnake"]
+position = Vector2(61, -101)
+rotation = 0.277507
+shape = SubResource("CapsuleShape2D_mxy3n")
 
 [node name="Frog_3" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(1596, 730)
@@ -872,7 +933,7 @@ TrackName = "frog_3"
 position = Vector2(1.00004, 49)
 scale = Vector2(0.303734, 0.252743)
 sprite_frames = SubResource("SpriteFrames_3aj6y")
-animation = &"active"
+animation = &"idle"
 offset = Vector2(-5.19482, -358.442)
 
 [node name="Frog_2" parent="." instance=ExtResource("8_0iyqr")]
@@ -883,7 +944,7 @@ TrackName = "frog_2"
 position = Vector2(0.999979, 37)
 scale = Vector2(0.2375, 0.2375)
 sprite_frames = SubResource("SpriteFrames_bdrey")
-animation = &"active"
+animation = &"idle"
 offset = Vector2(-5.19482, -358.442)
 
 [node name="Frog_1" parent="." instance=ExtResource("8_0iyqr")]
@@ -894,7 +955,7 @@ TrackName = "frog_1"
 position = Vector2(-1.00002, 42)
 scale = Vector2(0.1925, 0.1925)
 sprite_frames = SubResource("SpriteFrames_lf1yk")
-animation = &"active"
+animation = &"idle"
 offset = Vector2(-5.19482, -358.442)
 
 [node name="Bug_accordion" parent="." instance=ExtResource("8_0iyqr")]
@@ -959,4 +1020,5 @@ event = ExtResource("11_mynk3")
 [connection signal="ToggleTrack" from="Spider_strings" to="FMODController" method="_on_track_toggle"]
 
 [editable path="Caterpillar"]
+[editable path="Rattlesnake"]
 [editable path="Gerbil_kickdrum"]

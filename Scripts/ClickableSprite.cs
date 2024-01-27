@@ -76,7 +76,6 @@ public partial class ClickableSprite : Area2D
 	
 	private void OnMarkerSignal(string markerName)
 	{
-		// GD.Print("markerName: " + markerName + " TrackName: " + TrackName);
 		if (markerName == TrackName + "_sing")
 		{
 			if (!IsActive) return;

@@ -192,7 +192,7 @@
 			<value>0.93113207547169807</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing B</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -206,7 +206,7 @@
 			<value>2.5273584905660376</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing C</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -220,7 +220,7 @@
 			<value>5.2320754716981126</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing D</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -234,7 +234,7 @@
 			<value>5.6754716981132072</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing E</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -248,7 +248,7 @@
 			<value>6.1861374663072768</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing F</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -262,7 +262,7 @@
 			<value>8.8265619946091629</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing G</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -276,7 +276,7 @@
 			<value>9.3169265498652276</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing H</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -290,7 +290,7 @@
 			<value>9.8072911051212923</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing I</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -304,7 +304,7 @@
 			<value>10.247361859838273</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing J</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -318,7 +318,7 @@
 			<value>11.127503369272235</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing K</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -332,7 +332,7 @@
 			<value>13.063814690026952</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing L</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -346,7 +346,7 @@
 			<value>13.541605795148245</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing M</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -360,7 +360,7 @@
 			<value>14.006823450134767</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing N</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -374,7 +374,7 @@
 			<value>16.225198113207547</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing O</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -388,7 +388,7 @@
 			<value>16.73728908355795</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing P</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -402,7 +402,7 @@
 			<value>17.114619272237196</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing Q</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -416,7 +416,7 @@
 			<value>17.545853773584906</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing R</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -430,7 +430,7 @@
 			<value>17.950136118598383</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing S</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -444,7 +444,7 @@
 			<value>18.381370619946093</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing T</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -458,7 +458,7 @@
 			<value>18.776246630727758</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing U</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -472,7 +472,7 @@
 			<value>19.214733827493259</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing V</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -486,7 +486,7 @@
 			<value>19.630734501347707</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing W</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -500,7 +500,7 @@
 			<value>20.013005390835577</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing X</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -514,7 +514,7 @@
 			<value>20.473979110512126</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing Y</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -528,7 +528,7 @@
 			<value>20.957439353099726</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing Z</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -542,7 +542,7 @@
 			<value>21.958089622641506</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AA</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -556,7 +556,7 @@
 			<value>24.521553234501344</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AB</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -570,7 +570,7 @@
 			<value>24.91506738544474</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AC</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -584,7 +584,7 @@
 			<value>25.308581536388136</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AD</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -595,10 +595,10 @@
 	</object>
 	<object class="NamedMarker" id="{fbc88244-5abb-4226-862d-700ebe64fdac}">
 		<property name="position">
-			<value>25.724582210242584</value>
+			<value>25.75</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AE</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -612,7 +612,7 @@
 			<value>26.140582884097029</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AF</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -626,7 +626,7 @@
 			<value>26.534097035040425</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AG</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -640,7 +640,7 @@
 			<value>26.938854447439347</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AH</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -654,7 +654,7 @@
 			<value>27.366098382749321</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AI</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -668,7 +668,7 @@
 			<value>27.725882749326139</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AJ</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -682,7 +682,7 @@
 			<value>28.119396900269535</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AK</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -696,7 +696,7 @@
 			<value>28.511549191374662</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AL</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -710,7 +710,7 @@
 			<value>28.97515161725067</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AM</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -724,7 +724,7 @@
 			<value>30.116326819407007</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AN</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -738,7 +738,7 @@
 			<value>30.918715633423179</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AO</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>
@@ -752,7 +752,7 @@
 			<value>31.435810646900268</value>
 		</property>
 		<property name="name">
-			<value>bird_moon_sing AP</value>
+			<value>bird_moon_sing</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3b28671e-c38e-4375-9b86-01ae43e22b1e}</destination>

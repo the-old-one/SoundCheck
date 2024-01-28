@@ -1,0 +1,30 @@
+[gd_resource type="EventAsset" load_steps=4 format=3 uid="uid://c0k2timna88nv"]
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_nb27i"]
+data1 = 1620552130
+data2 = 3367704141
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_tkpa2"]
+name = "bird_1_note"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_nb27i")
+maximum = 6.0
+flags = 24
+guid = "{3d6e3fda-34fd-43ec-8703-11386547badb}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_d4q2n"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_tkpa2")
+labels = ["C", "D", "E", "F", "G", "A", "B"]
+path = "parameter:/bird_1_note"
+guid = "{3d6e3fda-34fd-43ec-8703-11386547badb}"
+name = "bird_1_note"
+
+[resource]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+parameters = {
+"{3d6e3fda-34fd-43ec-8703-11386547badb}": SubResource("ParameterAsset_d4q2n")
+}
+path = "event:/MINIGAME_Guess_Chord"
+guid = "{ad43b4b5-06ce-4910-b4f6-16bf434d7669}"
+name = "MINIGAME_Guess_Chord"

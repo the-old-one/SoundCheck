@@ -1,4 +1,4 @@
-[gd_resource type="ProjectCache" load_steps=7 format=3 uid="uid://cbmw14xjljjf8"]
+[gd_resource type="ProjectCache" load_steps=11 format=3 uid="uid://cbmw14xjljjf8"]
 
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="1_cxr46"]
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="2_00gkk"]
@@ -7,6 +7,35 @@
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="6_q03h8"]
 [ext_resource type="EventAsset" uid="uid://x2ushrg8xvl1" path="res://addons/FMOD/editor/resources/events/{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}.tres" id="7_8uahe"]
 
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_nb27i"]
+data1 = 1620552130
+data2 = 3367704141
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_tkpa2"]
+name = "bird_1_note"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_nb27i")
+maximum = 6.0
+flags = 24
+guid = "{3d6e3fda-34fd-43ec-8703-11386547badb}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_d4q2n"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_tkpa2")
+labels = ["C", "D", "E", "F", "G", "A", "B"]
+path = "parameter:/bird_1_note"
+guid = "{3d6e3fda-34fd-43ec-8703-11386547badb}"
+name = "bird_1_note"
+
+[sub_resource type="EventAsset" id="EventAsset_5w224"]
+is_oneshot = true
+min_distance = 1.0
+max_distance = 20.0
+parameters = {
+"{3d6e3fda-34fd-43ec-8703-11386547badb}": SubResource("ParameterAsset_d4q2n")
+}
+path = "event:/MINIGAME_Guess_Chord"
+guid = "{ad43b4b5-06ce-4910-b4f6-16bf434d7669}"
+name = "MINIGAME_Guess_Chord"
+
 [resource]
 banks = {
 "{2c9ad742-8356-0293-3b26-4ec8c53f8d43}": ExtResource("2_00gkk"),
@@ -14,7 +43,8 @@ banks = {
 }
 events = {
 "{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}": ExtResource("7_8uahe"),
-"{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8")
+"{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8"),
+"{ad43b4b5-06ce-4910-b4f6-16bf434d7669}": SubResource("EventAsset_5w224")
 }
 busses = {
 "{332c9e16-88fe-499b-9ad3-d4a15382af8d}": ExtResource("4_ptv0b"),
@@ -34,6 +64,12 @@ bank_tree = [{
 "resource": ExtResource("2_00gkk")
 }]
 event_tree = [{
+"children": [],
+"item_type": 1,
+"node_name": "MINIGAME_Guess_Chord",
+"path": "event:/MINIGAME_Guess_Chord",
+"resource": SubResource("EventAsset_5w224")
+}, {
 "children": [],
 "item_type": 1,
 "node_name": "MUSIC_Animal_Orchestra",

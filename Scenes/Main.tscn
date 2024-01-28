@@ -1,4 +1,4 @@
-[gd_scene load_steps=149 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=151 format=3 uid="uid://xti1sy0vy7tm"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_iu4sk"]
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://daaon5slkyt24" path="res://icon.svg" id="2_ivar4"]
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="3_bytus"]
 [ext_resource type="Script" path="res://Scenes/Button1_Sound.gd" id="3_p5htt"]
+[ext_resource type="Texture2D" uid="uid://oq67f1hbr6r2" path="res://Assets/Images/Close_button.png" id="5_uxc18"]
 [ext_resource type="EventAsset" uid="uid://x2ushrg8xvl1" path="res://addons/FMOD/editor/resources/events/{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}.tres" id="6_wblku"]
 [ext_resource type="Texture2D" uid="uid://lke27tw585cv" path="res://Assets/Images/Firefly.png" id="7_d8j3o"]
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
@@ -641,6 +642,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_28s5x"]
+radius = 92.0
+height = 260.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_tj7xw"]
 animations = [{
 "frames": [{
@@ -789,11 +794,9 @@ offset_bottom = 40.0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 
-[node name="Exit" type="Button" parent="CanvasLayer/Control/MarginContainer"]
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/Control/MarginContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 31
-text = "Exit
-"
+texture_normal = ExtResource("5_uxc18")
 
 [node name="StudioBankLoader" type="StudioBankLoader" parent="."]
 load_on = 1
@@ -1040,12 +1043,19 @@ offset = Vector2(-5.19482, -358.442)
 position = Vector2(947, 978)
 TrackName = "bug_accordion"
 
+[node name="CollisionShape2D" parent="Bug_accordion" index="0"]
+visible = false
+
 [node name="Sprite" type="AnimatedSprite2D" parent="Bug_accordion"]
 position = Vector2(-43, 110)
 scale = Vector2(0.654478, 0.654478)
 sprite_frames = SubResource("SpriteFrames_mdpl5")
 animation = &"active"
 offset = Vector2(139.957, -361.708)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bug_accordion"]
+position = Vector2(-35, -17)
+shape = SubResource("CapsuleShape2D_28s5x")
 
 [node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(492, 657)
@@ -1079,7 +1089,7 @@ script = ExtResource("10_ii6re")
 event = ExtResource("11_mynk3")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/MarginContainer/Exit" to="." method="LoadMainMenu"]
+[connection signal="pressed" from="CanvasLayer/Control/MarginContainer/TextureButton" to="." method="LoadMainMenu"]
 [connection signal="ToggleTrack" from="Bird_1" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
@@ -1096,4 +1106,5 @@ event = ExtResource("11_mynk3")
 
 [editable path="Caterpillar"]
 [editable path="Rattlesnake"]
+[editable path="Bug_accordion"]
 [editable path="Gerbil_kickdrum"]

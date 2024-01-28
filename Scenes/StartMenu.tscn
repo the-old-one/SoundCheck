@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2ybp3wjsygxk"]
+[gd_scene load_steps=7 format=3 uid="uid://b2ybp3wjsygxk"]
 
 [ext_resource type="Script" path="res://Scripts/StartMenu.cs" id="1_rt2h4"]
+[ext_resource type="Texture2D" uid="uid://dj3aj5ix188kq" path="res://Assets/Images/play_btn.PNG" id="2_5r8ac"]
+[ext_resource type="Texture2D" uid="uid://dmumto77gk160" path="res://Assets/Images/play_btn_press.PNG" id="3_efllh"]
 [ext_resource type="Texture2D" uid="uid://lke27tw585cv" path="res://Assets/Images/Firefly.png" id="3_w2ice"]
+[ext_resource type="Texture2D" uid="uid://rlk0hmebuh16" path="res://Assets/Images/play_btn_hover.PNG" id="4_y3geu"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yx7ic"]
 particle_flag_disable_z = true
@@ -35,9 +38,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -256.0
-offset_top = 133.0
+offset_top = 17.0
 offset_right = 256.0
-offset_bottom = 353.0
+offset_bottom = 237.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 20
@@ -49,16 +52,13 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="StartDawnChorus" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 120)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "Dawn Chorus"
-
-[node name="StartGuessChord" type="Button" parent="MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "Guess Chord"
+texture_normal = ExtResource("2_5r8ac")
+texture_pressed = ExtResource("3_efllh")
+texture_hover = ExtResource("4_y3geu")
+stretch_mode = 5
 
 [node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
 modulate = Color(1, 1, 0.584314, 1)
@@ -73,5 +73,4 @@ speed_scale = 0.26
 randomness = 0.26
 visibility_rect = Rect2(-960, -540, 1920, 1080)
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/StartDawnChorus" to="." method="OnLoadDawnChorus"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGuessChord" to="." method="OnLoadGuessChord"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TextureButton" to="." method="OnLoadDawnChorus"]

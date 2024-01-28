@@ -1,0 +1,94 @@
+[gd_scene load_steps=9 format=3 uid="uid://bij2gael68xe8"]
+
+[ext_resource type="Script" path="res://Scripts/GuessChord.cs" id="1_p4mtc"]
+[ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="2_3fbw6"]
+[ext_resource type="Script" path="res://Scripts/FMODController.gd" id="2_3puo0"]
+[ext_resource type="SpriteFrames" uid="uid://nplfoko0k8mn" path="res://Scenes/bird_1_sprite_frames.tres" id="3_tkkt1"]
+[ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="3_wuhhq"]
+[ext_resource type="Texture2D" uid="uid://cvoimen5lqduj" path="res://Assets/Images/Electric_Pole.png" id="4_i7hax"]
+[ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="6_6s5px"]
+[ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="7_e8fnk"]
+
+[node name="GuessChord" type="Node2D"]
+position = Vector2(0, -1)
+script = ExtResource("1_p4mtc")
+
+[node name="FMODController" type="Node2D" parent="."]
+position = Vector2(633, 267)
+script = ExtResource("2_3puo0")
+event = ExtResource("3_wuhhq")
+
+[node name="ElectricPole" type="Sprite2D" parent="."]
+position = Vector2(959, 487)
+scale = Vector2(1, 0.880001)
+texture = ExtResource("4_i7hax")
+
+[node name="Bird_C" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
+position = Vector2(614, 1009)
+TrackName = "bird_1_note"
+fmodController = NodePath("../FMODController")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Bird_C"]
+scale = Vector2(0.37, 0.37)
+sprite_frames = ExtResource("3_tkkt1")
+animation = &"active"
+
+[node name="Bird_D" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
+position = Vector2(926, 928)
+TrackName = "D"
+fmodController = NodePath("../FMODController")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Bird_D"]
+scale = Vector2(0.37, 0.37)
+sprite_frames = ExtResource("3_tkkt1")
+animation = &"active"
+
+[node name="Bird_D2" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
+position = Vector2(1209, 832)
+TrackName = "E"
+fmodController = NodePath("../FMODController")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Bird_D2"]
+scale = Vector2(0.37, 0.37)
+sprite_frames = ExtResource("3_tkkt1")
+animation = &"active"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="Exit" type="Button" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "Exit
+"
+
+[node name="PlayButton" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 432.0
+offset_right = 190.0
+offset_bottom = 463.0
+text = "Play"
+
+[node name="StudioBankLoader" type="StudioBankLoader" parent="."]
+load_on = 1
+num_banks = 2
+bank_0 = ExtResource("6_6s5px")
+bank_1 = ExtResource("7_e8fnk")
+
+[connection signal="PlayNote" from="Bird_C" to="FMODController" method="_on_note_play"]
+[connection signal="ToggleTrack" from="Bird_C" to="FMODController" method="_on_track_toggle"]
+[connection signal="pressed" from="CanvasLayer/Control/PlayButton" to="FMODController" method="_on_play_button_pressed"]

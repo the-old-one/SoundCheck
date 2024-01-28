@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="SoundCheck"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://Scenes/Start.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 FMODRuntime="*res://addons/FMOD/runtime/fmod_runtime_manager.gd"
+SceneTransition="*res://Scenes/SceneTransition.tscn"
 
 [display]
 

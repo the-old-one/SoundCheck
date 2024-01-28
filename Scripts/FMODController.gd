@@ -3,6 +3,8 @@ extends Node2D
 @export var event: EventAsset
 
 var instance: EventInstance
+var guess_chord_instance: EventInstance
+
 var marker_callable: Callable = Callable(self, "marker_callback")
 
 var active_tracks = 0
@@ -31,7 +33,27 @@ func _on_track_toggle(track_name, is_on):
 	instance.set_parameter_by_name_with_label(track_name, state, false)
 	emit_signal("active_tracks_number_changed", active_tracks)
 
+func _on_note_play(track_name, note):
+	instance.set_parameter_by_name_with_label(track_name, note, false)
+
 
 func marker_callback(args):
 	var marker_name = args.properties.name
 	call_deferred("emit_signal","marker_called", marker_name)
+
+var chord_c = ["C", "E", "G"]
+var chord_c_min = ["C", "G"]
+
+# var chords = [chord_c, chord_c_min]
+
+func _on_play_button_pressed():
+	play_current_chord()
+
+func play_current_chord():
+	print("play current chord")
+	var chord = chord_c # chords[0]
+	play_chord(chord)
+
+func play_chord(chord):
+	for note in chord:
+		instance.set_parameter_by_name_with_label("bird_1_note", note, false)

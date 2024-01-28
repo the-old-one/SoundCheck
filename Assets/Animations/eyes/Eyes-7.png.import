@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv5quq28fhbw6"
-path="res://.godot/imported/Snake-3.png-e959105ef9c6319d9592528aa954359e.ctex"
+uid="uid://bc7st3rkxf6qx"
+path="res://.godot/imported/Eyes-7.png-7cfba227eb7f51fe145c20378c8fa473.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animations/rattlesnake/Snake-3.png"
-dest_files=["res://.godot/imported/Snake-3.png-e959105ef9c6319d9592528aa954359e.ctex"]
+source_file="res://Assets/Animations/eyes/Eyes-7.png"
+dest_files=["res://.godot/imported/Eyes-7.png-7cfba227eb7f51fe145c20378c8fa473.ctex"]
 
 [params]
 

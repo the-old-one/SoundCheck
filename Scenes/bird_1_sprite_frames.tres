@@ -1,0 +1,57 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://nplfoko0k8mn"]
+
+[ext_resource type="Texture2D" uid="uid://clx8xve3lh01v" path="res://Assets/Animations/bird_1/Bird_1-1.png" id="1_0lkvn"]
+[ext_resource type="Texture2D" uid="uid://dkpwgv042010a" path="res://Assets/Animations/bird_1/Bird_1-2.png" id="2_pbnei"]
+[ext_resource type="Texture2D" uid="uid://6il2505gffum" path="res://Assets/Animations/bird_1/Bird_1-3.png" id="3_3lfh1"]
+[ext_resource type="Texture2D" uid="uid://cixm68k2sx21u" path="res://Assets/Animations/bird_1/Bird_1-4.png" id="4_fnkoj"]
+[ext_resource type="Texture2D" uid="uid://dfi3lndai4y4x" path="res://Assets/Animations/bird_1/Bird_1-5.png" id="5_h7w5t"]
+[ext_resource type="Texture2D" uid="uid://id1vwve8u681" path="res://Assets/Animations/bird_1/Bird_1-6.png" id="6_r4xox"]
+[ext_resource type="Texture2D" uid="uid://d3poda41e7pgx" path="res://Assets/Animations/bird_1/Bird_1-7.png" id="7_11b2q"]
+[ext_resource type="Texture2D" uid="uid://px6xwo4qpar8" path="res://Assets/Animations/bird_1/Bird_1-8.png" id="8_8b04x"]
+[ext_resource type="Texture2D" uid="uid://cq2y46dsqhh82" path="res://Assets/Animations/bird_1/Bird_1-9.png" id="9_s7d4v"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0lkvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pbnei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3lfh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fnkoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_h7w5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r4xox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_11b2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8b04x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s7d4v")
+}],
+"loop": false,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0lkvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pbnei")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]

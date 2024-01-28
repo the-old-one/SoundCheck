@@ -3,13 +3,16 @@ using System;
 
 public partial class Main : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
+	private SceneTransition sceneTransition;
+
 	public override void _Ready()
 	{
+		sceneTransition = GetNode<SceneTransition>("/root/SceneTransition");
 	}
-
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
+	
+		
+	private void LoadMainMenu() {
+		var scenePath = "res://Scenes/StartMenuCanvas.tscn";
+		sceneTransition.ChangeScene(scenePath, locationName: "", spawnPoint: null);
 	}
 }

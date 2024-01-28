@@ -1,5 +1,6 @@
-[gd_scene load_steps=137 format=3 uid="uid://xti1sy0vy7tm"]
+[gd_scene load_steps=149 format=3 uid="uid://xti1sy0vy7tm"]
 
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_iu4sk"]
 [ext_resource type="EventAsset" uid="uid://cf14mosv0vf0i" path="res://addons/FMOD/editor/resources/events/{26a7f988-a3c5-4864-b9ad-db3c0601772a}.tres" id="2_5h313"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_dxf4c"]
 [ext_resource type="Texture2D" uid="uid://daaon5slkyt24" path="res://icon.svg" id="2_ivar4"]
@@ -10,19 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="8_0iyqr"]
 [ext_resource type="Texture2D" uid="uid://c7tajfa2b12ob" path="res://Assets/Images/Spotlight.png" id="8_7it6c"]
 [ext_resource type="Script" path="res://Scripts/Background.cs" id="8_raww0"]
-[ext_resource type="Texture2D" uid="uid://clx8xve3lh01v" path="res://Assets/Animations/bird_1/Bird_1-1.png" id="10_58m8j"]
+[ext_resource type="Texture2D" uid="uid://qreyfwc1c0fj" path="res://Assets/Images/Moon.png" id="10_8jmk7"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="10_ii6re"]
+[ext_resource type="Texture2D" uid="uid://eawdh4rfgsig" path="res://Assets/Images/Tree 2.png" id="11_3j5rs"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="11_mynk3"]
-[ext_resource type="Texture2D" uid="uid://dkpwgv042010a" path="res://Assets/Animations/bird_1/Bird_1-2.png" id="11_nn2v0"]
 [ext_resource type="Texture2D" uid="uid://dp08gxn2fbi2x" path="res://Assets/Images/Rope.png" id="11_oq8ri"]
-[ext_resource type="Texture2D" uid="uid://6il2505gffum" path="res://Assets/Animations/bird_1/Bird_1-3.png" id="12_o8dyv"]
-[ext_resource type="Texture2D" uid="uid://cixm68k2sx21u" path="res://Assets/Animations/bird_1/Bird_1-4.png" id="13_essq4"]
 [ext_resource type="Texture2D" uid="uid://bt86jkgw4oqrg" path="res://Assets/Images/Drums.png" id="13_lamw7"]
-[ext_resource type="Texture2D" uid="uid://dfi3lndai4y4x" path="res://Assets/Animations/bird_1/Bird_1-5.png" id="14_utqaq"]
-[ext_resource type="Texture2D" uid="uid://id1vwve8u681" path="res://Assets/Animations/bird_1/Bird_1-6.png" id="15_h425w"]
-[ext_resource type="Texture2D" uid="uid://d3poda41e7pgx" path="res://Assets/Animations/bird_1/Bird_1-7.png" id="16_6hh5y"]
-[ext_resource type="Texture2D" uid="uid://px6xwo4qpar8" path="res://Assets/Animations/bird_1/Bird_1-8.png" id="17_asbat"]
-[ext_resource type="Texture2D" uid="uid://cq2y46dsqhh82" path="res://Assets/Animations/bird_1/Bird_1-9.png" id="18_peyv4"]
+[ext_resource type="SpriteFrames" uid="uid://nplfoko0k8mn" path="res://Scenes/bird_1_sprite_frames.tres" id="17_0ex47"]
 [ext_resource type="Texture2D" uid="uid://b67rp6q2docld" path="res://Assets/Animations/bird_2/Bird_2-6.png" id="24_4t56u"]
 [ext_resource type="Texture2D" uid="uid://djb2wxlpgnlsq" path="res://Assets/Animations/bird_2/Bird_2-7.png" id="25_iodsh"]
 [ext_resource type="Texture2D" uid="uid://cdvqh40t8008v" path="res://Assets/Animations/bird_2/Bird_2-8.png" id="26_andk4"]
@@ -53,44 +48,61 @@
 [ext_resource type="Texture2D" uid="uid://cjijgabwu3uu0" path="res://Assets/Animations/bird_3/Bird_3-12.png" id="38_dlehe"]
 [ext_resource type="Texture2D" uid="uid://b4rellul3p88c" path="res://Assets/Animations/caterpillar/Caterpillar-1.png" id="47_i26kq"]
 [ext_resource type="Texture2D" uid="uid://dksj7byb2qacp" path="res://Assets/Animations/caterpillar/Caterpillar-2.png" id="48_e40ad"]
+[ext_resource type="Texture2D" uid="uid://bvnqds404he46" path="res://Assets/Animations/eyes/Mouth-1.png" id="48_ytftk"]
 [ext_resource type="Texture2D" uid="uid://ckse4q8qi1lag" path="res://Assets/Animations/caterpillar/Caterpillar-3.png" id="49_nc2wh"]
+[ext_resource type="Texture2D" uid="uid://b6b0xygw06xf1" path="res://Assets/Animations/eyes/Mouth-2.png" id="49_nwbyq"]
+[ext_resource type="Texture2D" uid="uid://bvxyumyq17l3w" path="res://Assets/Animations/eyes/Mouth-3.png" id="50_5f87i"]
 [ext_resource type="Texture2D" uid="uid://e3dmqlceqy8y" path="res://Assets/Animations/caterpillar/Caterpillar-4.png" id="50_og0y3"]
+[ext_resource type="Texture2D" uid="uid://cuv5vr3xpak7s" path="res://Assets/Animations/eyes/Mouth-4.png" id="51_e8c62"]
 [ext_resource type="Texture2D" uid="uid://bs1faylrdit8k" path="res://Assets/Animations/caterpillar/Caterpillar-5.png" id="51_ow8r3"]
+[ext_resource type="Texture2D" uid="uid://ck34rgv18172i" path="res://Assets/Animations/eyes/Eyes-1.png" id="52_7ufiq"]
 [ext_resource type="Texture2D" uid="uid://c7ry7jph32w6q" path="res://Assets/Animations/caterpillar/Caterpillar-6.png" id="52_368no"]
 [ext_resource type="Texture2D" uid="uid://ca53w3xj1pgbo" path="res://Assets/Animations/caterpillar/Caterpillar-7.png" id="53_vffaq"]
+[ext_resource type="Texture2D" uid="uid://byn6w836kxw0g" path="res://Assets/Animations/eyes/Eyes-2.png" id="53_wb7ov"]
 [ext_resource type="Texture2D" uid="uid://b3m3gxmxuq81y" path="res://Assets/Animations/caterpillar/Caterpillar-8.png" id="54_01rug"]
+[ext_resource type="Texture2D" uid="uid://dqcl8p16e8yiq" path="res://Assets/Animations/eyes/Eyes-3.png" id="54_y52f1"]
+[ext_resource type="Texture2D" uid="uid://bbadnkiec1785" path="res://Assets/Animations/eyes/Eyes-4.png" id="55_anwdk"]
+[ext_resource type="Texture2D" uid="uid://dfge18ffjr0ly" path="res://Assets/Animations/eyes/Eyes-5.png" id="56_fq6mf"]
 [ext_resource type="Texture2D" uid="uid://c6lviimsp1bxm" path="res://Assets/Images/Mushrooms.png" id="57_81bcd"]
-[ext_resource type="Texture2D" uid="uid://wgb3k842r27f" path="res://Assets/Images/Tree.png" id="57_t8jv7"]
+[ext_resource type="Texture2D" uid="uid://b0jrtx2bki68i" path="res://Assets/Animations/eyes/Eyes-6.png" id="57_ylyjg"]
+[ext_resource type="Texture2D" uid="uid://bc7st3rkxf6qx" path="res://Assets/Animations/eyes/Eyes-7.png" id="58_5gmha"]
 [ext_resource type="Texture2D" uid="uid://bqmyx0rhtdetm" path="res://Assets/Images/Grass.png" id="58_yfamr"]
+[ext_resource type="Texture2D" uid="uid://vap26m7kb38s" path="res://Assets/Animations/eyes/Eyes-8.png" id="59_pmnor"]
 [ext_resource type="Texture2D" uid="uid://bdu7ln75mmchl" path="res://Assets/Images/Bush_1.png" id="60_d04rv"]
 [ext_resource type="Texture2D" uid="uid://degwjd6u1utn4" path="res://Assets/Animations/frog_1/Frog_1-1.png" id="61_unmqf"]
 [ext_resource type="Texture2D" uid="uid://bib06g1mg1sdb" path="res://Assets/Animations/frog_1/Frog_1-2.png" id="62_usj0c"]
-[ext_resource type="Texture2D" uid="uid://ba16onhkwkd2b" path="res://Assets/Animations/rattlesnake/Snake-1.png" id="62_x5cjq"]
 [ext_resource type="Texture2D" uid="uid://spfs4cw0uf3f" path="res://Assets/Animations/hamster/Hamster_drum-1.png" id="62_xodam"]
 [ext_resource type="Texture2D" uid="uid://b4hwc7btcgibe" path="res://Assets/Animations/frog_1/Frog_1-3.png" id="63_5wphc"]
-[ext_resource type="Texture2D" uid="uid://oppxnnqdk3iq" path="res://Assets/Animations/rattlesnake/Snake-2.png" id="63_fmc3e"]
 [ext_resource type="Texture2D" uid="uid://dbuhko27xru66" path="res://Assets/Animations/hamster/Hamster_drum-2.png" id="63_hf6c6"]
 [ext_resource type="Texture2D" uid="uid://873y5li4aa6e" path="res://Assets/Animations/hamster/Hamster_drum-3.png" id="64_nsr5m"]
 [ext_resource type="Texture2D" uid="uid://d0ag6f4fkxfm" path="res://Assets/Animations/frog_1/Frog_1-4.png" id="64_osewk"]
-[ext_resource type="Texture2D" uid="uid://dv5quq28fhbw6" path="res://Assets/Animations/rattlesnake/Snake-3.png" id="64_pebt4"]
 [ext_resource type="Texture2D" uid="uid://3ofq3irbh80o" path="res://Assets/Animations/frog_1/Frog_1-5.png" id="65_k1ruw"]
 [ext_resource type="Texture2D" uid="uid://b8alm4dnq56u5" path="res://Assets/Animations/frog_1/Frog_1-6.png" id="66_1bhr3"]
 [ext_resource type="Texture2D" uid="uid://b86y8t5qwtgel" path="res://Assets/Animations/frog_1/Frog_1-7.png" id="67_4icnr"]
+[ext_resource type="Texture2D" uid="uid://bg0waxor5asfs" path="res://Assets/Animations/rattlesnake/Snake-1 2.png" id="68_uic8n"]
+[ext_resource type="Texture2D" uid="uid://d0eulfybxrvcf" path="res://Assets/Animations/rattlesnake/Snake-2 2.png" id="69_cg8si"]
 [ext_resource type="Texture2D" uid="uid://drjxx6366fnlw" path="res://Assets/Animations/accordion/Accordion-1.png" id="69_py54h"]
+[ext_resource type="Texture2D" uid="uid://dvyfnfrs4qbvy" path="res://Assets/Animations/rattlesnake/Snake-3 2.png" id="70_gwxum"]
 [ext_resource type="Texture2D" uid="uid://d3g7uml7c8ad7" path="res://Assets/Animations/accordion/Accordion-2.png" id="70_k0aak"]
 [ext_resource type="Texture2D" uid="uid://w860mmxrrxwe" path="res://Assets/Animations/accordion/Accordion-3.png" id="71_80h7d"]
+[ext_resource type="Texture2D" uid="uid://18rgrbo34gj7" path="res://Assets/Animations/rattlesnake/Snake-4.png" id="71_afapv"]
 [ext_resource type="Texture2D" uid="uid://bxiyyet05y3r4" path="res://Assets/Animations/spider/Spider-1.png" id="71_gqsuq"]
+[ext_resource type="Texture2D" uid="uid://vxneq1oythbr" path="res://Assets/Animations/rattlesnake/Snake-5.png" id="72_666la"]
 [ext_resource type="Texture2D" uid="uid://yay36yr7csbw" path="res://Assets/Animations/spider/Spider-2.png" id="72_lgj0s"]
 [ext_resource type="Texture2D" uid="uid://cv3a8u81b71vh" path="res://Assets/Animations/frog_1/Frog_blinking-2.png" id="72_mj11e"]
 [ext_resource type="Texture2D" uid="uid://dojlu68n7u6rj" path="res://Assets/Animations/accordion/Accordion-4.png" id="72_quh6i"]
 [ext_resource type="Texture2D" uid="uid://cb36tao4n7vcx" path="res://Assets/Animations/frog_1/Frog_blinking-3.png" id="73_0q52s"]
 [ext_resource type="Texture2D" uid="uid://bbu3ax5h1opsf" path="res://Assets/Animations/accordion/Accordion-5.png" id="73_ispqa"]
 [ext_resource type="Texture2D" uid="uid://b76uvoxf7nwtr" path="res://Assets/Animations/spider/Spider-3.png" id="73_mp576"]
+[ext_resource type="Texture2D" uid="uid://dba4rqq3buhcb" path="res://Assets/Animations/rattlesnake/Snake-6.png" id="73_poi2b"]
+[ext_resource type="Texture2D" uid="uid://dve54prtgv5iw" path="res://Assets/Animations/rattlesnake/Snake-7.png" id="74_7egkl"]
 [ext_resource type="Texture2D" uid="uid://y1xfts353mbe" path="res://Assets/Animations/spider/Spider-4.png" id="74_h1ug1"]
 [ext_resource type="Texture2D" uid="uid://bncbu0l8milap" path="res://Assets/Animations/accordion/Accordion-6.png" id="74_wn7kp"]
 [ext_resource type="Texture2D" uid="uid://cau6aao515aen" path="res://Assets/Animations/accordion/Accordion-7.png" id="75_0s2mu"]
+[ext_resource type="Texture2D" uid="uid://c8xx1waiofrrh" path="res://Assets/Animations/rattlesnake/Snake-8.png" id="75_v3n2x"]
 [ext_resource type="Texture2D" uid="uid://cqok2ewuj2rqn" path="res://Assets/Animations/spider/Spider-5.png" id="75_x1w2d"]
 [ext_resource type="Texture2D" uid="uid://1ds5sg2jdbvp" path="res://Assets/Animations/spider/Spider-6.png" id="76_55qer"]
+[ext_resource type="Texture2D" uid="uid://dp0o4n2wpk7xp" path="res://Assets/Animations/rattlesnake/Snake-9.png" id="76_hanqm"]
 [ext_resource type="Texture2D" uid="uid://buompnre4wlp" path="res://Assets/Animations/accordion/Accordion-8.png" id="76_k0wce"]
 [ext_resource type="Texture2D" uid="uid://cq6aa1ry0bux0" path="res://Assets/Animations/accordion/Accordion-9.png" id="77_byg4v"]
 [ext_resource type="Texture2D" uid="uid://bhrcek20qj824" path="res://Assets/Animations/spider/Spider-7.png" id="77_g8pni"]
@@ -148,52 +160,6 @@ turbulence_noise_speed = Vector3(10, 1, 2.08165e-12)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b6q8"]
 blend_mode = 1
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_gqwlf"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_58m8j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_nn2v0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_o8dyv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_essq4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_utqaq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_h425w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_6hh5y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_asbat")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_peyv4")
-}],
-"loop": false,
-"name": &"active",
-"speed": 15.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_58m8j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_nn2v0")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 2.0
-}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_csuia"]
 animations = [{
@@ -296,7 +262,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_aopp2"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_7mlkm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -334,6 +300,64 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hw57o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_ytftk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_nwbyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_5f87i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_e8c62")
+}],
+"loop": false,
+"name": &"active",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("52_7ufiq")
+}, {
+"duration": 3.0,
+"texture": ExtResource("53_wb7ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_y52f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_anwdk")
+}, {
+"duration": 5.0,
+"texture": ExtResource("56_fq6mf")
+}, {
+"duration": 4.0,
+"texture": ExtResource("57_ylyjg")
+}, {
+"duration": 5.0,
+"texture": ExtResource("58_5gmha")
+}, {
+"duration": 4.0,
+"texture": ExtResource("57_ylyjg")
+}, {
+"duration": 5.0,
+"texture": ExtResource("58_5gmha")
+}, {
+"duration": 9.0,
+"texture": ExtResource("59_pmnor")
+}, {
+"duration": 3.0,
+"texture": ExtResource("53_wb7ov")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_etfcp"]
@@ -387,13 +411,31 @@ height = 241.967
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("62_x5cjq")
+"texture": ExtResource("68_uic8n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_fmc3e")
+"texture": ExtResource("69_cg8si")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_pebt4")
+"texture": ExtResource("70_gwxum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_afapv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_666la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_poi2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_7egkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_v3n2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_hanqm")
 }],
 "loop": false,
 "name": &"active",
@@ -401,7 +443,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 5.0,
-"texture": ExtResource("63_fmc3e")
+"texture": ExtResource("69_cg8si")
+}, {
+"duration": 3.0,
+"texture": ExtResource("70_gwxum")
+}, {
+"duration": 10.0,
+"texture": ExtResource("68_uic8n")
 }],
 "loop": true,
 "name": &"idle",
@@ -711,9 +759,9 @@ animations = [{
 }]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_iu4sk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 custom_minimum_size = Vector2(10, 10)
@@ -723,6 +771,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="CanvasLayer/Control"]
+visible = false
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
@@ -732,6 +781,19 @@ icon = ExtResource("2_ivar4")
 [node name="StudioEventEmitter2D" type="StudioEventEmitter2D" parent="CanvasLayer/Control/Button"]
 event = ExtResource("2_5h313")
 script = ExtResource("3_p5htt")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="Exit" type="Button" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "Exit
+"
 
 [node name="StudioBankLoader" type="StudioBankLoader" parent="."]
 load_on = 1
@@ -788,9 +850,13 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.447059, 0.439216, 0.517647, 1)
 
-[node name="Tree" type="Sprite2D" parent="BG"]
-position = Vector2(960, 541)
-texture = ExtResource("57_t8jv7")
+[node name="Moon" type="Sprite2D" parent="BG"]
+position = Vector2(818, 170)
+texture = ExtResource("10_8jmk7")
+
+[node name="Tree2" type="Sprite2D" parent="BG"]
+position = Vector2(957, 543)
+texture = ExtResource("11_3j5rs")
 
 [node name="Grass2" type="Sprite2D" parent="BG"]
 position = Vector2(410, 1005)
@@ -847,7 +913,7 @@ z_index = 1
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_1"]
 position = Vector2(-4.00003, 59)
 scale = Vector2(0.455, 0.455)
-sprite_frames = SubResource("SpriteFrames_gqwlf")
+sprite_frames = ExtResource("17_0ex47")
 animation = &"idle"
 offset = Vector2(2.19788, -241.758)
 
@@ -882,13 +948,26 @@ TrackName = "bird_bass"
 [node name="Sprite" type="AnimatedSprite2D" parent="Bird_bass"]
 position = Vector2(-0.999978, 101)
 scale = Vector2(0.4225, 0.4225)
-sprite_frames = SubResource("SpriteFrames_aopp2")
+sprite_frames = SubResource("SpriteFrames_7mlkm")
 animation = &"idle"
 autoplay = "idle"
 offset = Vector2(-43.7957, -277.372)
 
+[node name="Eyes" parent="." instance=ExtResource("8_0iyqr")]
+z_index = 1
+position = Vector2(1437, 632)
+TrackName = "eyes"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Eyes"]
+position = Vector2(4.00006, 20)
+scale = Vector2(0.4225, 0.4225)
+sprite_frames = SubResource("SpriteFrames_hw57o")
+animation = &"idle"
+autoplay = "idle"
+offset = Vector2(-24.8609, -38.3188)
+
 [node name="Caterpillar" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(1252, 555)
+position = Vector2(956, 580)
 TrackName = "caterpillar"
 
 [node name="CollisionShape2D" parent="Caterpillar" index="0"]
@@ -969,10 +1048,6 @@ sprite_frames = SubResource("SpriteFrames_mdpl5")
 animation = &"active"
 offset = Vector2(139.957, -361.708)
 
-[node name="Rabbit_trumpet" parent="." instance=ExtResource("8_0iyqr")]
-position = Vector2(242, 663)
-TrackName = "rabbit_trumpet"
-
 [node name="Gerbil_kickdrum" parent="." instance=ExtResource("8_0iyqr")]
 position = Vector2(492, 657)
 TrackName = "gerbil_kickdrum"
@@ -1005,17 +1080,18 @@ script = ExtResource("10_ii6re")
 event = ExtResource("11_mynk3")
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button/StudioEventEmitter2D" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/MarginContainer/Exit" to="." method="LoadMainMenu"]
 [connection signal="ToggleTrack" from="Bird_1" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_3" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bird_bass" to="FMODController" method="_on_track_toggle"]
+[connection signal="ToggleTrack" from="Eyes" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Caterpillar" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Rattlesnake" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Frog_3" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Frog_2" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Frog_1" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Bug_accordion" to="FMODController" method="_on_track_toggle"]
-[connection signal="ToggleTrack" from="Rabbit_trumpet" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Gerbil_kickdrum" to="FMODController" method="_on_track_toggle"]
 [connection signal="ToggleTrack" from="Spider_strings" to="FMODController" method="_on_track_toggle"]
 

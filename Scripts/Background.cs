@@ -6,7 +6,7 @@ public partial class Background : Node2D
 	public override void _Ready()
 	{
 		Callable callable = new Callable(this, MethodName.OnActiveTracksChangedSignal);
-		var fmodController = GetNode<Node2D>("/root/Main/FMODController");
+		var fmodController = GetNode<Node2D>("/root/Start/Main/FMODController");
 		fmodController.Connect("active_tracks_number_changed", callable);
 		OnActiveTracksChangedSignal(0);
 	}

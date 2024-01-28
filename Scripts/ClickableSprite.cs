@@ -5,13 +5,20 @@ public partial class ClickableSprite : Area2D
 {
 	[Signal]
 	public delegate void ToggleTrackEventHandler(string trackName, bool isActive);
+	[Signal]
+	public delegate void PlayNoteEventHandler(string trackName, string noteName);
 	[Export]
 	public string TrackName;
+	[Export]
+	public string NoteName;
+	[Export]
+	public bool IsNote;
 	public bool IsActive;
 	
 	private Vector2 originalScale;
-
 	private AnimatedSprite2D sprite;
+	[Export]
+	Node2D fmodController;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -24,20 +31,20 @@ public partial class ClickableSprite : Area2D
 			sprite.AnimationFinished += OnActivaAnimationFinished;
 		}
 		SetActive(IsActive, 0f);
-		// find FMODController
 		Callable callable = new Callable(this, MethodName.OnMarkerSignal);
-
-		var fmodController = GetNode<Node2D>("/root/Main/FMODController");
+		if (fmodController == null)
+		{
+			fmodController = GetNode<Node2D>("/root/Start/Main/FMODController");
+		}
 		
 		fmodController.Connect("marker_called", callable);
-
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+	public void Activate()
 	{
+		EmitSignal(SignalName.PlayNote, TrackName, NoteName);
 	}
-
+	
 	private void OnClick(Node viewPort, InputEvent inputEvent, long shapeIdx)
 	{
 		if (@inputEvent.IsActionPressed("click"))
@@ -49,7 +56,11 @@ public partial class ClickableSprite : Area2D
 	private void toggleActive()
 	{
 		IsActive = !IsActive;
-		EmitSignal(SignalName.ToggleTrack, TrackName, IsActive);
+		if (!IsNote)
+		{
+			EmitSignal(SignalName.ToggleTrack, TrackName, IsActive);
+		}
+		
 		SetActive(IsActive);
 	}
 
@@ -62,7 +73,6 @@ public partial class ClickableSprite : Area2D
 			Tween tween = GetTree().CreateTween().SetParallel(true);
 			tween.TweenProperty(sprite, "modulate", new Color(1, 1, 1, 1), transitionDuration).SetTrans(Tween.TransitionType.Sine);
 			tween.TweenProperty(sprite, "scale", new Vector2(originalScale.X + 0.1f, originalScale.Y + 0.1f), transitionDuration).SetTrans(Tween.TransitionType.Sine);
-			
 		}
 		else
 		{

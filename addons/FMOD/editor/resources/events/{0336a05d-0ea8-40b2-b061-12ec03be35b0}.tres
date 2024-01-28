@@ -1,0 +1,8 @@
+[gd_resource type="EventAsset" format=3 uid="uid://b6i7houy83753"]
+
+[resource]
+min_distance = 1.0
+max_distance = 20.0
+path = "event:/MUSIC_Title_Screen"
+guid = "{0336a05d-0ea8-40b2-b061-12ec03be35b0}"
+name = "MUSIC_Title_Screen"

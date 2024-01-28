@@ -1,4 +1,4 @@
-[gd_resource type="ProjectCache" load_steps=8 format=3 uid="uid://cbmw14xjljjf8"]
+[gd_resource type="ProjectCache" load_steps=9 format=3 uid="uid://cbmw14xjljjf8"]
 
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="1_cxr46"]
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="2_00gkk"]
@@ -7,6 +7,7 @@
 [ext_resource type="EventAsset" uid="uid://c0k2timna88nv" path="res://addons/FMOD/editor/resources/events/{ad43b4b5-06ce-4910-b4f6-16bf434d7669}.tres" id="5_2hhaa"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="6_q03h8"]
 [ext_resource type="EventAsset" uid="uid://x2ushrg8xvl1" path="res://addons/FMOD/editor/resources/events/{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}.tres" id="7_8uahe"]
+[ext_resource type="EventAsset" uid="uid://b6i7houy83753" path="res://addons/FMOD/editor/resources/events/{0336a05d-0ea8-40b2-b061-12ec03be35b0}.tres" id="8_i30uo"]
 
 [resource]
 banks = {
@@ -14,6 +15,7 @@ banks = {
 "{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}": ExtResource("1_cxr46")
 }
 events = {
+"{0336a05d-0ea8-40b2-b061-12ec03be35b0}": ExtResource("8_i30uo"),
 "{7ebf1930-2a2c-4535-9b0d-aa5d06e5a648}": ExtResource("7_8uahe"),
 "{a0df9f58-6968-4450-a474-8ae7e5cbb729}": ExtResource("6_q03h8"),
 "{ad43b4b5-06ce-4910-b4f6-16bf434d7669}": ExtResource("5_2hhaa")
@@ -53,6 +55,12 @@ event_tree = [{
 "node_name": "MUSIC_BGM",
 "path": "event:/MUSIC_BGM",
 "resource": ExtResource("7_8uahe")
+}, {
+"children": [],
+"item_type": 1,
+"node_name": "MUSIC_Title_Screen",
+"path": "event:/MUSIC_Title_Screen",
+"resource": ExtResource("8_i30uo")
 }]
 bus_tree = [{
 "children": [{

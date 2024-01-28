@@ -5,7 +5,7 @@
 			<value>MUSIC_C#</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ddd9499d-04f0-4ab1-81a8-da3786974965}</destination>
@@ -92,14 +92,20 @@
 		<property name="length">
 			<value>26</value>
 		</property>
+		<property name="volume">
+			<value>-4.5</value>
+		</property>
+		<property name="polyphony">
+			<value>10</value>
+		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>750</value>
 		</property>
 		<property name="minimumScatterDistance">
-			<value>2.4000001</value>
+			<value>0</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>5.5999999</value>
+			<value>0</value>
 		</property>
 		<relationship name="sound">
 			<destination>{9da1bca1-935e-4467-ba43-10eb0f11b33a}</destination>

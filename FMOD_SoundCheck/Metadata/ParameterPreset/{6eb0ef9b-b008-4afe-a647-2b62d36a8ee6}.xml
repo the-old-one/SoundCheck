@@ -34,7 +34,7 @@
 			<value>Off</value>
 		</property>
 		<property name="initialValue">
-			<value>0</value>
+			<value>12</value>
 		</property>
 	</object>
 </objects>

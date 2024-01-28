@@ -5,7 +5,7 @@
 			<value>MUSIC_highA</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ddd9499d-04f0-4ab1-81a8-da3786974965}</destination>
@@ -92,8 +92,11 @@
 		<property name="length">
 			<value>26</value>
 		</property>
+		<property name="minimumScatterDistance">
+			<value>0</value>
+		</property>
 		<property name="maximumScatterDistance">
-			<value>3.20000005</value>
+			<value>0</value>
 		</property>
 		<relationship name="sound">
 			<destination>{d0ba0ed0-ab36-4105-ad24-99beb0536934}</destination>
@@ -101,7 +104,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{bf4bfa4d-f29e-4044-a154-37e8cae4de93}">
 		<property name="volume">
-			<value>-2.5</value>
+			<value>-1.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>

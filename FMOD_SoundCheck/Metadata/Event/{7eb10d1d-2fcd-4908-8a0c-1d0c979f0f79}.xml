@@ -5,7 +5,7 @@
 			<value>MUSIC_lowA</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ddd9499d-04f0-4ab1-81a8-da3786974965}</destination>
@@ -92,6 +92,9 @@
 		<property name="length">
 			<value>26</value>
 		</property>
+		<property name="polyphony">
+			<value>10</value>
+		</property>
 		<property name="minimumTimeBetweenSounds">
 			<value>74</value>
 		</property>
@@ -99,10 +102,10 @@
 			<value>700</value>
 		</property>
 		<property name="minimumScatterDistance">
-			<value>3</value>
+			<value>0</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>7</value>
+			<value>0</value>
 		</property>
 		<relationship name="sound">
 			<destination>{75df6f57-faf6-4518-854c-23edf9d254aa}</destination>

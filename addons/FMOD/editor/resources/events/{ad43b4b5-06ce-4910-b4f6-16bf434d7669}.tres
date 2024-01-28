@@ -1,5 +1,24 @@
 [gd_resource type="EventAsset" load_steps=10 format=3 uid="uid://c0k2timna88nv"]
 
+[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_e7e7h"]
+data1 = 1240349821
+data2 = 2073942207
+
+[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_2dqr6"]
+name = "bird_2_note"
+id = SubResource("FMOD_STUDIO_PARAMETER_ID_e7e7h")
+maximum = 12.0
+default_value = 12.0
+flags = 24
+guid = "{177f6454-9a3b-41a3-922a-81f175f9fbed}"
+
+[sub_resource type="ParameterAsset" id="ParameterAsset_mqgcp"]
+parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_2dqr6")
+labels = ["C", "Csharp", "D", "Dsharp", "E", "F", "Fsharp", "G", "Gsharp", "A", "Asharp", "B", "Off"]
+path = "parameter:/bird_2_note"
+guid = "{177f6454-9a3b-41a3-922a-81f175f9fbed}"
+name = "bird_2_note"
+
 [sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_ufn7e"]
 data1 = 1620552130
 data2 = 3367704141
@@ -37,25 +56,6 @@ labels = ["C", "Csharp", "D", "Dsharp", "E", "F", "Fsharp", "G", "Gsharp", "A", 
 path = "parameter:/bird_3_note"
 guid = "{ee0c7bc0-0d52-469d-aaaf-7241efaca5a7}"
 name = "bird_3_note"
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_ID" id="FMOD_STUDIO_PARAMETER_ID_e7e7h"]
-data1 = 1240349821
-data2 = 2073942207
-
-[sub_resource type="FMOD_STUDIO_PARAMETER_DESCRIPTION" id="FMOD_STUDIO_PARAMETER_DESCRIPTION_2dqr6"]
-name = "bird_2_note"
-id = SubResource("FMOD_STUDIO_PARAMETER_ID_e7e7h")
-maximum = 12.0
-default_value = 12.0
-flags = 24
-guid = "{177f6454-9a3b-41a3-922a-81f175f9fbed}"
-
-[sub_resource type="ParameterAsset" id="ParameterAsset_mqgcp"]
-parameter_description = SubResource("FMOD_STUDIO_PARAMETER_DESCRIPTION_2dqr6")
-labels = ["C", "Csharp", "D", "Dsharp", "E", "F", "Fsharp", "G", "Gsharp", "A", "Asharp", "B", "Off"]
-path = "parameter:/bird_2_note"
-guid = "{177f6454-9a3b-41a3-922a-81f175f9fbed}"
-name = "bird_2_note"
 
 [resource]
 is_oneshot = true

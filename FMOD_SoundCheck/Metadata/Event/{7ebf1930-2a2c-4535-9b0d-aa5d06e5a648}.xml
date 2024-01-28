@@ -8,7 +8,7 @@
 			<value>MUSIC_BGM</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ddd9499d-04f0-4ab1-81a8-da3786974965}</destination>
@@ -185,8 +185,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{0930919f-e386-4fa4-a8e6-6ad24000b425}">
 		<relationship name="effects">
+			<destination>{c4db2668-98ca-4540-9d18-4b0fe2cf0ed9}</destination>
 			<destination>{8cd5c21b-b084-46ac-be2b-798b1e4eb2d5}</destination>
-			<destination>{e6afd788-11af-4a0f-8dfd-5d1879c51b3d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2d2a0045-8d03-4fa4-9d09-1315db7eea4a}" />
@@ -224,18 +224,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{67ee8880-6f16-421f-aaf3-fcef0f5bfdf7}" />
-	<object class="MixerBusFader" id="{8cd5c21b-b084-46ac-be2b-798b1e4eb2d5}" />
-	<object class="SFXReverbEffect" id="{e6afd788-11af-4a0f-8dfd-5d1879c51b3d}">
-		<property name="decayTime">
-			<value>5500</value>
-		</property>
-		<property name="wetLevel">
-			<value>0</value>
-		</property>
+	<object class="SFXReverbEffect" id="{c4db2668-98ca-4540-9d18-4b0fe2cf0ed9}">
 		<property name="dryLevel">
-			<value>-37</value>
+			<value>-26.5</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{8cd5c21b-b084-46ac-be2b-798b1e4eb2d5}" />
 	<object class="MixerBusFader" id="{010692db-b091-4e6f-9378-9cc937972f31}" />
 	<object class="MixerBusFader" id="{49a90b18-ea73-429e-a655-ec52defb54e0}" />
 	<object class="MixerBusFader" id="{4c73ed23-7bf0-4c28-9912-13cbebf37919}" />

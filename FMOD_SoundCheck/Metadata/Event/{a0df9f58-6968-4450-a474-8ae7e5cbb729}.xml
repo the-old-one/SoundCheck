@@ -2091,6 +2091,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{9ef3ddbe-b826-4794-afec-ada40d2cd1f6}">
 		<relationship name="effects">
+			<destination>{f3d738fe-ecd1-43fa-b4b7-427c6fed2c27}</destination>
 			<destination>{e683235a-6866-4907-ba9b-c35f17716bdf}</destination>
 			<destination>{6d67bf8e-c59a-44a9-8734-be7cde5e6841}</destination>
 		</relationship>
@@ -2251,6 +2252,14 @@
 			<destination>{ed1cf503-e3d3-4613-94df-a006798b07d9}</destination>
 		</relationship>
 	</object>
+	<object class="SFXReverbEffect" id="{f3d738fe-ecd1-43fa-b4b7-427c6fed2c27}">
+		<property name="wetLevel">
+			<value>0</value>
+		</property>
+		<property name="dryLevel">
+			<value>-21.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{e683235a-6866-4907-ba9b-c35f17716bdf}" />
 	<object class="CompressorEffect" id="{6d67bf8e-c59a-44a9-8734-be7cde5e6841}">
 		<property name="threshold">
@@ -2263,7 +2272,7 @@
 			<value>10</value>
 		</property>
 		<property name="gain">
-			<value>5</value>
+			<value>1.5</value>
 		</property>
 	</object>
 	<object class="AutomationCurve" id="{3292ea6c-0226-438c-83c8-37a950c28171}">
@@ -2393,7 +2402,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-80</value>
+			<value>-70.0000229</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{7f965142-8c66-4656-a307-63db2e185b46}">
@@ -2401,7 +2410,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>1.5</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b0e6d163-3325-4069-81d8-b91723556249}">
@@ -2441,7 +2450,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-80</value>
+			<value>-63.3333588</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{d246a4ef-ea5e-48f9-a775-793e90cb1a8b}">
@@ -2449,7 +2458,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>2.5</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{cbec56cd-ab6c-4e9b-a18f-8648f59e454e}">

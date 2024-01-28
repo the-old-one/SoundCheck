@@ -1,9 +1,10 @@
 extends Node2D
 
 @export var event: EventAsset
+@export var minigame_event: EventAsset
 
 var instance: EventInstance
-var guess_chord_instance: EventInstance
+var minigame_instance: EventInstance
 
 var marker_callable: Callable = Callable(self, "marker_callback")
 
@@ -21,6 +22,9 @@ func _ready():
 	instance = FMODRuntime.create_instance(event)
 	instance.start()
 	instance.set_callback(marker_callable, FMODStudioModule.FMOD_STUDIO_EVENT_CALLBACK_TIMELINE_MARKER)
+	
+	minigame_instance = FMODRuntime.create_instance(minigame_event)
+# 	minigame_instance.start()
 
 func _on_track_toggle(track_name, is_on):
 	if is_on == true:
@@ -56,4 +60,6 @@ func play_current_chord():
 
 func play_chord(chord):
 	for note in chord:
-		instance.set_parameter_by_name_with_label("bird_1_note", note, false)
+		instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
+		instance.set_parameter_by_name_with_label("bird_2_note", "D", false)
+		minigame_instance.start()

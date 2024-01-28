@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="ParameterPreset" id="{6eb0ef9b-b008-4afe-a647-2b62d36a8ee6}">
+	<object class="ParameterPreset" id="{624468d7-5fa7-41cf-8d0a-d82849983c85}">
 		<property name="name">
-			<value>bird_1_note</value>
+			<value>bird_2_note</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a1ea3efd-4638-41ea-96ce-420916473357}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{3d6e3fda-34fd-43ec-8703-11386547badb}</destination>
+			<destination>{177f6454-9a3b-41a3-922a-81f175f9fbed}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{3d6e3fda-34fd-43ec-8703-11386547badb}">
+	<object class="GameParameter" id="{177f6454-9a3b-41a3-922a-81f175f9fbed}">
 		<property name="parameterType">
 			<value>2</value>
 		</property>
@@ -34,7 +34,7 @@
 			<value>Off</value>
 		</property>
 		<property name="initialValue">
-			<value>0</value>
+			<value>12</value>
 		</property>
 	</object>
 </objects>

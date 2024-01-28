@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://Scripts/GuessChord.cs" id="1_p4mtc"]
 [ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="2_3fbw6"]
 [ext_resource type="Script" path="res://Scripts/FMODController.gd" id="2_3puo0"]
+[ext_resource type="Texture2D" uid="uid://yb0kp1h7dcbw" path="res://Assets/Images/Guess_The_Chord.png" id="2_apm1k"]
 [ext_resource type="SpriteFrames" uid="uid://nplfoko0k8mn" path="res://Scenes/bird_1_sprite_frames.tres" id="3_tkkt1"]
 [ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="3_wuhhq"]
 [ext_resource type="EventAsset" uid="uid://c0k2timna88nv" path="res://addons/FMOD/editor/resources/events/{ad43b4b5-06ce-4910-b4f6-16bf434d7669}.tres" id="4_gdo3w"]
-[ext_resource type="Texture2D" uid="uid://cvoimen5lqduj" path="res://Assets/Images/Electric_Pole.png" id="4_i7hax"]
 [ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="6_6s5px"]
 [ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="7_e8fnk"]
 
@@ -14,19 +14,19 @@
 position = Vector2(0, -1)
 script = ExtResource("1_p4mtc")
 
+[node name="GuessTheChord" type="Sprite2D" parent="."]
+position = Vector2(957, 546)
+texture = ExtResource("2_apm1k")
+
 [node name="FMODController" type="Node2D" parent="."]
 position = Vector2(633, 267)
 script = ExtResource("2_3puo0")
 event = ExtResource("3_wuhhq")
 minigame_event = ExtResource("4_gdo3w")
 
-[node name="ElectricPole" type="Sprite2D" parent="."]
-position = Vector2(959, 487)
-scale = Vector2(1, 0.880001)
-texture = ExtResource("4_i7hax")
-
 [node name="Bird_C" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
-position = Vector2(614, 1009)
+visible = false
+position = Vector2(557, 911)
 TrackName = "bird_1_note"
 NoteName = "C"
 fmodController = NodePath("../FMODController")
@@ -37,7 +37,7 @@ sprite_frames = ExtResource("3_tkkt1")
 animation = &"active"
 
 [node name="Bird_D" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
-position = Vector2(926, 928)
+position = Vector2(862, 853)
 TrackName = "bird_1_note"
 NoteName = "D"
 fmodController = NodePath("../FMODController")
@@ -48,7 +48,7 @@ sprite_frames = ExtResource("3_tkkt1")
 animation = &"active"
 
 [node name="Bird_D2" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_3fbw6")]
-position = Vector2(1209, 832)
+position = Vector2(1111, 765)
 TrackName = "bird_1_note"
 NoteName = "E"
 fmodController = NodePath("../FMODController")
@@ -88,6 +88,14 @@ offset_right = 190.0
 offset_bottom = 463.0
 text = "Play"
 
+[node name="StopButton" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 476.0
+offset_right = 190.0
+offset_bottom = 507.0
+text = "Stop"
+
 [node name="StudioBankLoader" type="StudioBankLoader" parent="."]
 load_on = 1
 num_banks = 2
@@ -95,5 +103,5 @@ bank_0 = ExtResource("6_6s5px")
 bank_1 = ExtResource("7_e8fnk")
 
 [connection signal="PlayNote" from="Bird_C" to="FMODController" method="_on_note_play"]
-[connection signal="ToggleTrack" from="Bird_C" to="FMODController" method="_on_track_toggle"]
 [connection signal="pressed" from="CanvasLayer/Control/PlayButton" to="FMODController" method="_on_play_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/StopButton" to="FMODController" method="_on_stop_button_pressed"]

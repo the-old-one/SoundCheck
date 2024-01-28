@@ -13,6 +13,7 @@ public partial class ClickableSprite : Area2D
 	public string NoteName;
 	[Export]
 	public bool IsNote;
+	[Export]
 	public bool IsActive;
 	
 	private Vector2 originalScale;
@@ -20,7 +21,6 @@ public partial class ClickableSprite : Area2D
 	[Export]
 	Node2D fmodController;
 	
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		this.InputEvent += OnClick;
@@ -38,6 +38,13 @@ public partial class ClickableSprite : Area2D
 		}
 		
 		fmodController.Connect("marker_called", callable);
+
+		if (IsActive)
+		{
+			GD.Print("Emitting ToggleTrack signal");
+			EmitSignal(SignalName.ToggleTrack, TrackName, IsActive);
+			SetActive(IsActive);
+		}
 	}
 
 	public void Activate()

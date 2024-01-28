@@ -12,7 +12,7 @@ public partial class Main : Node2D
 	
 		
 	private void LoadMainMenu() {
-		var scenePath = "res://Scenes/StartMenuCanvas.tscn";
+		var scenePath = "res://Scenes/Menu.tscn";
 		sceneTransition.ChangeScene(scenePath, locationName: "", spawnPoint: null);
 	}
 }

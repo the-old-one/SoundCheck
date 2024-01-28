@@ -12,7 +12,7 @@ public partial class Start : Node2D
 	{
 		sceneTransition = GetNode<SceneTransition>("/root/SceneTransition");
 		sceneTransition.SceneLoaded += OnSceneLoaded;
-		var scenePath = "res://Scenes/StartMenuCanvas.tscn";
+		var scenePath = "res://Scenes/Menu.tscn";
 		LoadStartingLevel(scenePath, "");
 
 	}

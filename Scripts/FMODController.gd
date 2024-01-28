@@ -13,11 +13,6 @@ var active_tracks = 0
 signal marker_called(marker_name)
 signal active_tracks_number_changed(active_tracks_number)
 
-const BIRD_1 = "bird_1"
-const BIRD_2 = "bird_2"
-const BIRD_3 = "bird_3"
-const BIRD_BASS = "bird_bass"
-
 func _ready():
 	instance = FMODRuntime.create_instance(event)
 	instance.start()
@@ -59,7 +54,17 @@ func play_current_chord():
 	play_chord(chord)
 
 func play_chord(chord):
-	for note in chord:
-		instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
-		instance.set_parameter_by_name_with_label("bird_2_note", "D", false)
-		minigame_instance.start()
+	minigame_instance.start()
+	minigame_instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
+	minigame_instance.set_parameter_by_name_with_label("bird_2_note", "E", false)
+	minigame_instance.set_parameter_by_name_with_label("bird_3_note", "G", false)
+# 	for note in chord:
+# 		instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
+# 		instance.set_parameter_by_name_with_label("bird_2_note", "E", false)
+# 		instance.set_parameter_by_name_with_label("bird_2_note", "G", false)
+		
+func _exit_tree():
+	instance.stop(FMODStudioModule.FMOD_STUDIO_STOP_ALLOWFADEOUT)
+	instance.release()
+	instance.stop(FMODStudioModule.FMOD_STUDIO_STOP_ALLOWFADEOUT)
+	minigame_instance.release()

@@ -1,9 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2ybp3wjsygxk"]
+[gd_scene load_steps=4 format=3 uid="uid://b2ybp3wjsygxk"]
 
 [ext_resource type="Script" path="res://Scripts/StartMenu.cs" id="1_rt2h4"]
+[ext_resource type="Texture2D" uid="uid://lke27tw585cv" path="res://Assets/Images/Firefly.png" id="3_w2ice"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_cmnft"]
-font_size = 116
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yx7ic"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(960, 540, 1)
+spread = 180.0
+initial_velocity_min = -4.0
+initial_velocity_max = 4.0
+gravity = Vector3(2.08165e-12, 2.08165e-12, 2.08165e-12)
+linear_accel_max = 36.67
+scale_min = 0.7
+scale_max = 1.2
+turbulence_enabled = true
+turbulence_noise_strength = 20.0
+turbulence_noise_speed = Vector3(10, 1, 2.08165e-12)
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -42,22 +55,23 @@ theme_override_font_sizes/font_size = 50
 text = "Dawn Chorus"
 
 [node name="StartGuessChord" type="Button" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Guess Chord"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -361.5
-offset_top = 372.0
-offset_right = 361.5
-offset_bottom = 530.0
-grow_horizontal = 2
-text = "Sound Check"
-label_settings = SubResource("LabelSettings_cmnft")
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+modulate = Color(1, 1, 0.584314, 1)
+z_index = 2
+position = Vector2(955, 542)
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_yx7ic")
+texture = ExtResource("3_w2ice")
+lifetime = 10.0
+preprocess = 1.0
+speed_scale = 0.26
+randomness = 0.26
+visibility_rect = Rect2(-960, -540, 1920, 1080)
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/StartDawnChorus" to="." method="OnLoadDawnChorus"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/StartGuessChord" to="." method="OnLoadGuessChord"]

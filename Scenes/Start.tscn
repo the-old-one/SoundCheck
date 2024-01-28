@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4ee3qnsiiwx4"]
+[gd_scene load_steps=4 format=3 uid="uid://b4ee3qnsiiwx4"]
 
 [ext_resource type="Script" path="res://Scripts/Start.cs" id="1_hsnfr"]
+[ext_resource type="BankAsset" uid="uid://dotk7l247nr0a" path="res://addons/FMOD/editor/resources/banks/{b487f796-f22d-4ed1-bd6f-c43634cc8bdb}.tres" id="2_a4p5g"]
+[ext_resource type="BankAsset" uid="uid://dgskfguotm2ft" path="res://addons/FMOD/editor/resources/banks/{2c9ad742-8356-0293-3b26-4ec8c53f8d43}.tres" id="3_f074y"]
 
 [node name="Start" type="Node2D"]
 script = ExtResource("1_hsnfr")
+
+[node name="StudioBankLoader" type="StudioBankLoader" parent="."]
+load_on = 1
+num_banks = 2
+bank_0 = ExtResource("2_a4p5g")
+bank_1 = ExtResource("3_f074y")

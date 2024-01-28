@@ -1,0 +1,86 @@
+[gd_scene load_steps=16 format=3 uid="uid://da6w0g6pe5gls"]
+
+[ext_resource type="PackedScene" uid="uid://v7wkcs8dmqux" path="res://Scenes/StartMenuCanvas.tscn" id="1_svc2r"]
+[ext_resource type="PackedScene" uid="uid://bonyktpio405n" path="res://Scenes/TrackToggle.tscn" id="2_mqb1g"]
+[ext_resource type="Texture2D" uid="uid://cvqdoy0qqwxpp" path="res://Assets/Animations/bird_bass/Bird_bass-2.png" id="3_hvld1"]
+[ext_resource type="Texture2D" uid="uid://nmb46ip2o87n" path="res://Assets/Animations/bird_bass/Bird_bass-3.png" id="4_2gfas"]
+[ext_resource type="Texture2D" uid="uid://bvd4iglysgyyx" path="res://Assets/Animations/bird_bass/Bird_bass-4.png" id="5_odmqv"]
+[ext_resource type="Texture2D" uid="uid://j6qfew6pu8d7" path="res://Assets/Animations/bird_bass/Bird_bass-5.png" id="6_o2tmm"]
+[ext_resource type="Texture2D" uid="uid://bk1g2gu48m1jr" path="res://Assets/Animations/bird_bass/Bird_bass-6.png" id="7_vhqv6"]
+[ext_resource type="Texture2D" uid="uid://bs7d2v8wgk125" path="res://Assets/Animations/bird_bass/Bird_bass-7.png" id="8_eeu2x"]
+[ext_resource type="Texture2D" uid="uid://dgpjrl1ubrkem" path="res://Assets/Animations/bird_bass/Bird_bass-8.png" id="9_cl2dj"]
+[ext_resource type="Texture2D" uid="uid://dagd4mhnj3ef3" path="res://Assets/Animations/bird_bass/Bird_bass-9.png" id="10_nr1ew"]
+[ext_resource type="Texture2D" uid="uid://c6lh7gj358eb" path="res://Assets/Animations/bird_bass/Bird_bass-1.png" id="11_al5rb"]
+[ext_resource type="Script" path="res://Scripts/FMODController.gd" id="12_sonnf"]
+[ext_resource type="EventAsset" uid="uid://dlm8jaov7mi0g" path="res://addons/FMOD/editor/resources/events/{a0df9f58-6968-4450-a474-8ae7e5cbb729}.tres" id="13_7gisf"]
+[ext_resource type="Texture2D" uid="uid://d1qywbcacoik0" path="res://Assets/Images/Sound_Check 2.png" id="14_qjt3r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbr6h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hvld1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2gfas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_odmqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o2tmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vhqv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eeu2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cl2dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nr1ew")
+}],
+"loop": false,
+"name": &"active",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_al5rb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Menu" type="Node2D"]
+
+[node name="FMODController" type="Node2D" parent="."]
+script = ExtResource("12_sonnf")
+event = ExtResource("13_7gisf")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_svc2r")]
+
+[node name="Bird_bass" parent="." node_paths=PackedStringArray("fmodController") instance=ExtResource("2_mqb1g")]
+z_index = 2
+position = Vector2(1538, 660)
+TrackName = "bird_bass"
+IsActive = true
+fmodController = NodePath("../FMODController")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Bird_bass"]
+z_index = 2
+position = Vector2(-0.999978, 101)
+scale = Vector2(0.4225, 0.4225)
+sprite_frames = SubResource("SpriteFrames_kbr6h")
+animation = &"idle"
+autoplay = "idle"
+offset = Vector2(-43.7957, -277.372)
+
+[node name="SoundCheck2" type="Sprite2D" parent="."]
+position = Vector2(963, 545)
+texture = ExtResource("14_qjt3r")
+
+[connection signal="ToggleTrack" from="Bird_bass" to="FMODController" method="_on_track_toggle"]

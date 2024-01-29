@@ -18,7 +18,7 @@ func _ready():
 	instance.start()
 	instance.set_callback(marker_callable, FMODStudioModule.FMOD_STUDIO_EVENT_CALLBACK_TIMELINE_MARKER)
 	
-	minigame_instance = FMODRuntime.create_instance(minigame_event)
+# 	minigame_instance = FMODRuntime.create_instance(minigame_event)
 # 	minigame_instance.start()
 
 func _on_track_toggle(track_name, is_on):
@@ -54,10 +54,11 @@ func play_current_chord():
 	play_chord(chord)
 
 func play_chord(chord):
-	minigame_instance.start()
-	minigame_instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
-	minigame_instance.set_parameter_by_name_with_label("bird_2_note", "E", false)
-	minigame_instance.set_parameter_by_name_with_label("bird_3_note", "G", false)
+	pass
+# 	minigame_instance.start()
+# 	minigame_instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
+# 	minigame_instance.set_parameter_by_name_with_label("bird_2_note", "E", false)
+# 	minigame_instance.set_parameter_by_name_with_label("bird_3_note", "G", false)
 # 	for note in chord:
 # 		instance.set_parameter_by_name_with_label("bird_1_note", "C", false)
 # 		instance.set_parameter_by_name_with_label("bird_2_note", "E", false)
@@ -65,6 +66,4 @@ func play_chord(chord):
 		
 func _exit_tree():
 	instance.stop(FMODStudioModule.FMOD_STUDIO_STOP_ALLOWFADEOUT)
-	instance.release()
-	instance.stop(FMODStudioModule.FMOD_STUDIO_STOP_ALLOWFADEOUT)
-	minigame_instance.release()
+# 	instance.release()
